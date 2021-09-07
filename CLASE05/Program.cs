@@ -11,7 +11,6 @@ namespace CLASE05
 {
     static class Program
     {
-        //RAMA
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
