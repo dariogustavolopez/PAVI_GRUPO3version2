@@ -29,11 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBase));
+            this.lbl_posicion = new System.Windows.Forms.Label();
             this.btn_minimizar = new System.Windows.Forms.Button();
             this.btn_maximizar = new System.Windows.Forms.Button();
             this.btn_cerrar = new System.Windows.Forms.Button();
-            this.lbl_posicion = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lbl_posicion
+            // 
+            resources.ApplyResources(this.lbl_posicion, "lbl_posicion");
+            this.lbl_posicion.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_posicion.Name = "lbl_posicion";
             // 
             // btn_minimizar
             // 
@@ -68,12 +74,6 @@
             this.btn_cerrar.MouseLeave += new System.EventHandler(this.btn_cerrar_MouseLeave);
             this.btn_cerrar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_cerrar_MouseMove);
             // 
-            // lbl_posicion
-            // 
-            resources.ApplyResources(this.lbl_posicion, "lbl_posicion");
-            this.lbl_posicion.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_posicion.Name = "lbl_posicion";
-            // 
             // FrmBase
             // 
             resources.ApplyResources(this, "$this");
@@ -94,9 +94,9 @@
         }
 
         #endregion
+        public System.Windows.Forms.Label lbl_posicion;
         public System.Windows.Forms.Button btn_cerrar;
         public System.Windows.Forms.Button btn_minimizar;
         public System.Windows.Forms.Button btn_maximizar;
-        public System.Windows.Forms.Label lbl_posicion;
     }
 }

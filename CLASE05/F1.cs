@@ -9,9 +9,9 @@ using CLASE05.Clases;
 
 namespace CLASE05
 {
-    public partial class Frm_ABM_Usuario_Especifico : CLASE05.Formularios.FrmBASE.FrmBase
+    public partial class F1 : CLASE05.Formularios.FrmBASE.FrmBase
     {
-        public Frm_ABM_Usuario_Especifico()
+        public F1()
         {
             InitializeComponent();
         }

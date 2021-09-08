@@ -34,13 +34,10 @@
             // 
             // lblEtiqueta
             // 
-            this.lblEtiqueta.BackColor = System.Drawing.Color.Transparent;
-            this.lblEtiqueta.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblEtiqueta.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblEtiqueta.Location = new System.Drawing.Point(1, 6);
+            this.lblEtiqueta.Location = new System.Drawing.Point(4, 5);
             this.lblEtiqueta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEtiqueta.Name = "lblEtiqueta";
-            this.lblEtiqueta.Size = new System.Drawing.Size(144, 19);
+            this.lblEtiqueta.Size = new System.Drawing.Size(140, 19);
             this.lblEtiqueta.TabIndex = 0;
             this.lblEtiqueta.Text = "label1";
             this.lblEtiqueta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -49,20 +46,16 @@
             // 
             this.TxtDato.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtDato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.TxtDato.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F);
-            this.TxtDato.ForeColor = System.Drawing.Color.Silver;
             this.TxtDato.Location = new System.Drawing.Point(152, 4);
             this.TxtDato.Mask = "LLLLLLLLLL";
             this.TxtDato.Name = "TxtDato";
-            this.TxtDato.Size = new System.Drawing.Size(73, 25);
+            this.TxtDato.Size = new System.Drawing.Size(73, 22);
             this.TxtDato.TabIndex = 1;
             // 
             // LabelText01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.TxtDato);
             this.Controls.Add(this.lblEtiqueta);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

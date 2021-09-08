@@ -11,7 +11,7 @@ using CLASE05.Negocios;
 
 namespace CLASE05.Formularios.InicioSistema
 {
-    public partial class FrmLogin : Form
+    public partial class Frm_Log : Form
     {
         public string Pp_usuario
         {
@@ -23,45 +23,43 @@ namespace CLASE05.Formularios.InicioSistema
             get { return this.txt_clave.Text; }
             set { this.txt_clave.Text = value; }
         }
-
-       
-        public FrmLogin()
+        public Frm_Log()
         {
             InitializeComponent();
         }
 
-        private void btn_Ingresar_Click(object sender, EventArgs e)
+        private void btn_salir_Click(object sender, EventArgs e)
         {
-            if(txt_usuario.Text =="")
+            txt_usuario.Text = "";
+            txt_clave.Text = "";
+            Application.Exit();
+        }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+            if (txt_usuario.Text == "")
             {
-                MessageBox.Show("Falta carga el nombre del usuario", "Importante"
+                MessageBox.Show("Ingresar nombre de usuario", "Importante"
                               , MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
-            if(txt_clave.Text =="")
+            if (txt_clave.Text == "")
             {
-                MessageBox.Show("Falta carga la clave del usuario", "Importante"
+                MessageBox.Show("Ingresar contraseña", "Importante"
                , MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
             NE_Usuarios usuario = new NE_Usuarios();
 
-            if (usuario.Validar(txt_usuario.Text, txt_clave.Text)== NE_Usuarios.Validacion.correcta)
+            if (usuario.Validar(txt_usuario.Text, txt_clave.Text) == NE_Usuarios.Validacion.correcta)
             {
-                MessageBox.Show("Validación Correcta", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("¡Bienvenido!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this.Close();
             }
             else
-                MessageBox.Show("Validación Incorrecta", "", MessageBoxButtons.OK,  MessageBoxIcon.Stop);
+                MessageBox.Show("Los datos ingresados son incorrectos", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 
         }
-
-        private void btn_cancelar_Click(object sender, EventArgs e)
-        {
-            txt_usuario.Text = "";
-            txt_clave.Text = "";
-            this.Close();
-        }
-
     }
+    
 }

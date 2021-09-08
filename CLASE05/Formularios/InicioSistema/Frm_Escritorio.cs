@@ -47,7 +47,7 @@ namespace CLASE05.Formularios.InicioSistema
             this.clave = "";
             this.id_usuario = 0;
 
-            Frm_Login login = new Frm_Login();
+            Frm_Log login = new Frm_Log();
             login.ShowDialog();
             if (login.Pp_usuario == "")
             {

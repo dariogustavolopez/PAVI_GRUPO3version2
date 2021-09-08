@@ -105,15 +105,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
-<<<<<<< HEAD
-    <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Especifico.cs">
+    <Compile Include="F1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Especifico.Designer.cs">
-      <DependentUpon>Frm_ABM_Usuario_Especifico.cs</DependentUpon>
+    <Compile Include="F1.Designer.cs">
+      <DependentUpon>F1.cs</DependentUpon>
     </Compile>
-=======
->>>>>>> b2
     <Compile Include="Formularios\FrmBASE\FrmBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,11 +135,17 @@
     <Compile Include="Formularios\InicioSistema\Frm_Escritorio.Designer.cs">
       <DependentUpon>Frm_Escritorio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\InicioSistema\FrmLogin.cs">
+    <Compile Include="Formularios\InicioSistema\Frm_Log.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\InicioSistema\FrmLogin.Designer.cs">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
+    <Compile Include="Formularios\InicioSistema\Frm_Log.designer.cs">
+      <DependentUpon>Frm_Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\InicioSistema\Frm_Login1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\InicioSistema\Frm_Login1.Designer.cs">
+      <DependentUpon>Frm_Login1.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Prioridades\Frm_ABM_Prioridades.cs">
       <SubType>Form</SubType>
@@ -156,11 +159,11 @@
     <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.Designer.cs">
       <DependentUpon>Frm_ABM_Usuario_Entrada.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Usuarios\Frm_Base_Usuario_Datos.cs">
+    <Compile Include="Formularios\Usuarios\Frm_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Usuarios\Frm_Base_Usuario_Datos.Designer.cs">
-      <DependentUpon>Frm_Base_Usuario_Datos.cs</DependentUpon>
+    <Compile Include="Formularios\Usuarios\Frm_Usuario.Designer.cs">
+      <DependentUpon>Frm_Usuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Usuarios\Frm_Usuario_Alta.cs">
       <SubType>Form</SubType>
@@ -183,9 +186,6 @@
     <Compile Include="Negocios\NE_Usuarios.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Clases\ComboBox01.resx">
-      <DependentUpon>ComboBox01.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Clases\LabelText01.resx">
       <DependentUpon>LabelText01.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,12 +195,9 @@
     <EmbeddedResource Include="Clases\TextBox02.resx">
       <DependentUpon>TextBox02.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuario_Especifico.resx">
-      <DependentUpon>Frm_ABM_Usuario_Especifico.cs</DependentUpon>
+    <EmbeddedResource Include="F1.resx">
+      <DependentUpon>F1.cs</DependentUpon>
     </EmbeddedResource>
-=======
->>>>>>> b2
     <EmbeddedResource Include="Formularios\FrmBASE\FrmBase.resx">
       <DependentUpon>FrmBase.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,8 +210,11 @@
     <EmbeddedResource Include="Formularios\InicioSistema\Frm_Escritorio.resx">
       <DependentUpon>Frm_Escritorio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\InicioSistema\FrmLogin.resx">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\InicioSistema\Frm_Log.resx">
+      <DependentUpon>Frm_Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\InicioSistema\Frm_Login1.resx">
+      <DependentUpon>Frm_Login1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Prioridades\Frm_ABM_Prioridades.resx">
       <DependentUpon>Frm_ABM_Prioridades.cs</DependentUpon>
@@ -222,8 +222,8 @@
     <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.resx">
       <DependentUpon>Frm_ABM_Usuario_Entrada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Usuarios\Frm_Base_Usuario_Datos.resx">
-      <DependentUpon>Frm_Base_Usuario_Datos.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_Usuario.resx">
+      <DependentUpon>Frm_Usuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Usuarios\Frm_Usuario_Alta.resx">
       <DependentUpon>Frm_Usuario_Alta.cs</DependentUpon>
@@ -259,20 +259,52 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\candado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+    <None Include="Resources\maximizar_g.png" />
+    <None Include="Resources\maximizar.png" />
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar_g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar_r.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificar01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar4.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\2404622-abstrakt-vitt-guld-lyx-bakgrund-vektor-illustration-gratis-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\3982331.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-de-lujo-dorado-y-blanco-abstracto-oro-en-vector-208509820.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Luxury Business Presentation5.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Luxury Business Presentation6.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\pc-icon-32255.png" />
-<<<<<<< HEAD
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_cerrar.jpg" />
@@ -284,23 +316,13 @@
     <None Include="Resources\btn_minimizar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn_añadir %288%29.png" />
+    <None Include="Resources\btn_añadir %282%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn_eliminar %282%29.png" />
+    <None Include="Resources\btn_añadir %283%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn_modificar %281%29.png" />
-=======
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn_cerrar.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn_maximizar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn_minimizar.png" />
+    <None Include="Resources\btn_añadir %284%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_añadir %288%29.png" />
@@ -309,11 +331,28 @@
     <None Include="Resources\btn_eliminar %282%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\btn_eliminar %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_eliminar %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_eliminar %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\btn_modificar %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn_clear %282%29.png" />
->>>>>>> b2
+    <None Include="Resources\btn_modificar %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_modificar %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_añadir %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_añadir %2810%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

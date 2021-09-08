@@ -10,7 +10,7 @@ using CLASE05.Negocios;
 
 namespace CLASE05.Formularios.Usuarios
 {
-    public partial class Frm_Usuario_Alta : CLASE05.Formularios.Usuarios.Frm_Base_Usuario_Datos
+    public partial class Frm_Usuario_Alta : CLASE05.Formularios.Usuarios.Frm_Usuario
     {
         public Frm_Usuario_Alta()
         {

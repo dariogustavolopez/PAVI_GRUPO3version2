@@ -42,30 +42,18 @@
             // btn_cerrar
             // 
             this.btn_cerrar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-<<<<<<< HEAD
             this.btn_cerrar.Location = new System.Drawing.Point(571, 1);
-=======
-            this.btn_cerrar.Location = new System.Drawing.Point(634, 1);
->>>>>>> b2
             // 
             // btn_minimizar
             // 
             this.btn_minimizar.BackgroundImage = global::CLASE05.Properties.Resources.btn_minimizar;
             this.btn_minimizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-<<<<<<< HEAD
             this.btn_minimizar.Location = new System.Drawing.Point(501, 1);
-=======
-            this.btn_minimizar.Location = new System.Drawing.Point(564, 1);
->>>>>>> b2
             // 
             // btn_maximizar
             // 
             this.btn_maximizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-<<<<<<< HEAD
             this.btn_maximizar.Location = new System.Drawing.Point(536, 1);
-=======
-            this.btn_maximizar.Location = new System.Drawing.Point(599, 1);
->>>>>>> b2
             // 
             // label1
             // 
@@ -80,17 +68,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.groupBox1.Controls.Add(this.btn_buscar);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft JhengHei", 12.75F, System.Drawing.FontStyle.Bold);
-<<<<<<< HEAD
             this.groupBox1.ForeColor = System.Drawing.Color.Silver;
-=======
-            this.groupBox1.ForeColor = System.Drawing.Color.Gainsboro;
->>>>>>> b2
             this.groupBox1.Location = new System.Drawing.Point(12, 81);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(645, 113);
+            this.groupBox1.Size = new System.Drawing.Size(582, 113);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Restricciones de Búsqueda";
@@ -100,11 +83,7 @@
             this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.btn_buscar.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold);
             this.btn_buscar.ForeColor = System.Drawing.Color.Silver;
-<<<<<<< HEAD
             this.btn_buscar.Location = new System.Drawing.Point(491, 72);
-=======
-            this.btn_buscar.Location = new System.Drawing.Point(552, 77);
->>>>>>> b2
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(85, 30);
             this.btn_buscar.TabIndex = 0;
@@ -116,19 +95,10 @@
             this.btn_alta.BackColor = System.Drawing.Color.Transparent;
             this.btn_alta.BackgroundImage = global::CLASE05.Properties.Resources.btn_añadir__8_;
             this.btn_alta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-<<<<<<< HEAD
             this.btn_alta.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btn_alta.FlatAppearance.BorderSize = 0;
             this.btn_alta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_alta.Location = new System.Drawing.Point(423, 391);
-=======
-            this.btn_alta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_alta.FlatAppearance.BorderSize = 0;
-            this.btn_alta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_alta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_alta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_alta.Location = new System.Drawing.Point(487, 391);
->>>>>>> b2
             this.btn_alta.Name = "btn_alta";
             this.btn_alta.Size = new System.Drawing.Size(45, 45);
             this.btn_alta.TabIndex = 4;
@@ -140,19 +110,10 @@
             this.btn_modificar.BackColor = System.Drawing.Color.Transparent;
             this.btn_modificar.BackgroundImage = global::CLASE05.Properties.Resources.btn_modificar__1_;
             this.btn_modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-<<<<<<< HEAD
             this.btn_modificar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btn_modificar.FlatAppearance.BorderSize = 0;
             this.btn_modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_modificar.Location = new System.Drawing.Point(484, 391);
-=======
-            this.btn_modificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_modificar.FlatAppearance.BorderSize = 0;
-            this.btn_modificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_modificar.Location = new System.Drawing.Point(548, 391);
->>>>>>> b2
             this.btn_modificar.Name = "btn_modificar";
             this.btn_modificar.Size = new System.Drawing.Size(45, 45);
             this.btn_modificar.TabIndex = 4;
@@ -164,19 +125,10 @@
             this.btn_borrar.BackColor = System.Drawing.Color.Transparent;
             this.btn_borrar.BackgroundImage = global::CLASE05.Properties.Resources.btn_eliminar__2_;
             this.btn_borrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-<<<<<<< HEAD
             this.btn_borrar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btn_borrar.FlatAppearance.BorderSize = 0;
             this.btn_borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_borrar.Location = new System.Drawing.Point(544, 388);
-=======
-            this.btn_borrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_borrar.FlatAppearance.BorderSize = 0;
-            this.btn_borrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_borrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.btn_borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_borrar.Location = new System.Drawing.Point(605, 388);
->>>>>>> b2
             this.btn_borrar.Name = "btn_borrar";
             this.btn_borrar.Size = new System.Drawing.Size(50, 50);
             this.btn_borrar.TabIndex = 4;
@@ -188,8 +140,7 @@
             this._FormularioMovil = true;
             this._PosiciónVisible = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(669, 439);
+            this.ClientSize = new System.Drawing.Size(606, 439);
             this.Controls.Add(this.btn_borrar);
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.btn_alta);
@@ -213,12 +164,13 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
         protected System.Windows.Forms.GroupBox groupBox1;
         protected System.Windows.Forms.Button btn_buscar;
         private System.Windows.Forms.ToolTip toolTip1;
-        public System.Windows.Forms.Button btn_alta;
-        public System.Windows.Forms.Button btn_modificar;
-        public System.Windows.Forms.Button btn_borrar;
-        public System.Windows.Forms.Label label1;
+        protected System.Windows.Forms.Button btn_alta;
+        protected System.Windows.Forms.Button btn_modificar;
+        protected System.Windows.Forms.Button btn_borrar;
     }
 }

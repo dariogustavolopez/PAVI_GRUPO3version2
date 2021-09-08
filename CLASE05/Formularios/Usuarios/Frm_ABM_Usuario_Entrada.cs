@@ -34,8 +34,8 @@ namespace CLASE05.Formularios.Usuarios
                     columna = rb_n_usuario.Text;
                 if (rb_apellido.Checked == true)
                     columna = rb_apellido.Text;
-                if (rb_nombres.Checked == true)
-                    columna = rb_nombres.Text;
+                if (rb_nombre.Checked == true)
+                    columna = rb_nombre.Text;
 
                 grid_usuarios.Cargar(usuario.BuscarUsuario(txt_patron.Text, columna));
                 if (grid_usuarios.Rows.Count == 0)
@@ -55,9 +55,6 @@ namespace CLASE05.Formularios.Usuarios
         private void btn_blan_patron_Click(object sender, EventArgs e)
         {
             this.txt_patron.Text = string.Empty;
-            this.txt_id_usuario.Text = string.Empty;
-            txt_id_usuario.Enabled = true;
-            txt_patron.Enabled = true;
         }
 
         private void btn_alta_Click(object sender, EventArgs e)
@@ -82,55 +79,6 @@ namespace CLASE05.Formularios.Usuarios
             Frm_Usuario_Modificaciones frm_modificar = new Frm_Usuario_Modificaciones();
             frm_modificar.id_usuario = grid_usuarios.CurrentRow.Cells[0].Value.ToString();
             frm_modificar.ShowDialog();
-        }
-
-        private void rb_n_usuario_CheckedChanged(object sender, EventArgs e)
-        {
-            if(rb_n_usuario.Checked == true)
-            {
-                txt_id_usuario.Enabled = false;
-                txt_patron.Enabled = true;
-            }
-        }
-        private void rb_apellido_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rb_apellido.Checked == true)
-            {
-                txt_id_usuario.Enabled = false;
-                txt_patron.Enabled = true;
-            }
-        }
-        private void rb_nombres_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rb_nombres.Checked == true)
-            {
-                txt_id_usuario.Enabled = false;
-                txt_patron.Enabled = true;
-            }
-        }
-        private void rb_id_usuario_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rb_id_usuario.Checked == true)
-            {
-                txt_id_usuario.Enabled = true;
-                txt_patron.Enabled = false;
-            }
-        }
-
-        private void btn_borrar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_alta_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void btn_alta_Enter(object sender, EventArgs e)
-        {
-            Frm_Usuario_Alta frm_altas = new Frm_Usuario_Alta();
-            frm_altas.ShowDialog();
         }
     }
 }

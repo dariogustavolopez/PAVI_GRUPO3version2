@@ -1,16 +1,17 @@
-﻿namespace CLASE05.Formularios.InicioSistema
+﻿
+namespace CLASE05.Formularios.InicioSistema
 {
-    partial class Frm_Login
+    partial class Frm_Log
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,47 +21,27 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.gb_login = new System.Windows.Forms.GroupBox();
-            this.lbl_titulo = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btn_Ingresar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btn_Login = new System.Windows.Forms.Button();
             this.flowLayoutPanel_contraseña = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel_usuario = new System.Windows.Forms.FlowLayoutPanel();
             this.txt_clave = new System.Windows.Forms.TextBox();
             this.txt_usuario = new System.Windows.Forms.TextBox();
             this.lbl_Contraseña = new System.Windows.Forms.Label();
             this.lbl_Usuario = new System.Windows.Forms.Label();
+            this.btn_cerrar = new System.Windows.Forms.Button();
             this.gb_login.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btn_cerrar
-            // 
-            this.btn_cerrar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btn_cerrar.Location = new System.Drawing.Point(532, 1);
-            this.btn_cerrar.Size = new System.Drawing.Size(24, 25);
-            this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
-            // 
-            // btn_minimizar
-            // 
-            this.btn_minimizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btn_minimizar.FlatAppearance.BorderSize = 0;
-            this.btn_minimizar.Location = new System.Drawing.Point(433, 2);
-            this.btn_minimizar.Visible = false;
-            // 
-            // btn_maximizar
-            // 
-            this.btn_maximizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.btn_maximizar.FlatAppearance.BorderSize = 0;
-            this.btn_maximizar.Location = new System.Drawing.Point(474, 2);
-            this.btn_maximizar.Visible = false;
             // 
             // gb_login
             // 
@@ -68,9 +49,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gb_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.gb_login.Controls.Add(this.lbl_titulo);
-            this.gb_login.Controls.Add(this.label5);
-            this.gb_login.Controls.Add(this.btn_Ingresar);
+            this.gb_login.Controls.Add(this.label1);
+            this.gb_login.Controls.Add(this.label3);
+            this.gb_login.Controls.Add(this.btn_Login);
             this.gb_login.Controls.Add(this.flowLayoutPanel_contraseña);
             this.gb_login.Controls.Add(this.flowLayoutPanel_usuario);
             this.gb_login.Controls.Add(this.txt_clave);
@@ -81,47 +62,48 @@
             this.gb_login.Location = new System.Drawing.Point(1, 26);
             this.gb_login.Name = "gb_login";
             this.gb_login.Size = new System.Drawing.Size(555, 210);
-            this.gb_login.TabIndex = 15;
+            this.gb_login.TabIndex = 0;
             this.gb_login.TabStop = false;
             // 
-            // lbl_titulo
+            // label1
             // 
-            this.lbl_titulo.AutoSize = true;
-            this.lbl_titulo.Font = new System.Drawing.Font("Microsoft JhengHei", 12.75F, System.Drawing.FontStyle.Bold);
-            this.lbl_titulo.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_titulo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbl_titulo.Location = new System.Drawing.Point(236, 14);
-            this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(99, 22);
-            this.lbl_titulo.TabIndex = 13;
-            this.lbl_titulo.Text = "User Login";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 12.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(236, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 22);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "User Login";
             // 
-            // label5
+            // label3
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(110, 25);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(331, 20);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "______________________________________________";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label3.Location = new System.Drawing.Point(110, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(331, 20);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "______________________________________________";
             // 
-            // btn_Ingresar
+            // btn_Login
             // 
-            this.btn_Ingresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
-            this.btn_Ingresar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_Ingresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Ingresar.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btn_Ingresar.ForeColor = System.Drawing.Color.White;
-            this.btn_Ingresar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Ingresar.Location = new System.Drawing.Point(181, 152);
-            this.btn_Ingresar.Name = "btn_Ingresar";
-            this.btn_Ingresar.Size = new System.Drawing.Size(236, 37);
-            this.btn_Ingresar.TabIndex = 7;
-            this.btn_Ingresar.Text = "Login";
-            this.btn_Ingresar.UseVisualStyleBackColor = false;
+            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.btn_Login.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Login.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btn_Login.ForeColor = System.Drawing.Color.White;
+            this.btn_Login.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_Login.Location = new System.Drawing.Point(181, 152);
+            this.btn_Login.Name = "btn_Login";
+            this.btn_Login.Size = new System.Drawing.Size(236, 37);
+            this.btn_Login.TabIndex = 7;
+            this.btn_Login.Text = "Login";
+            this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // flowLayoutPanel_contraseña
             // 
@@ -194,37 +176,58 @@
             this.lbl_Usuario.TabIndex = 0;
             this.lbl_Usuario.Text = "Username";
             // 
-            // Frm_Login
+            // btn_cerrar
             // 
-            this._PosiciónVisible = true;
+            this.btn_cerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_cerrar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cerrar.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cerrar.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_cerrar.Location = new System.Drawing.Point(532, 1);
+            this.btn_cerrar.Name = "btn_cerrar";
+            this.btn_cerrar.Size = new System.Drawing.Size(24, 25);
+            this.btn_cerrar.TabIndex = 10;
+            this.btn_cerrar.Text = "X";
+            this.btn_cerrar.UseVisualStyleBackColor = false;
+            this.btn_cerrar.Click += new System.EventHandler(this.btn_salir_Click);
+            // 
+            // Frm_Log
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(557, 237);
             this.Controls.Add(this.gb_login);
-            this.Name = "Frm_Login";
+            this.Controls.Add(this.btn_cerrar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Frm_Log";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Controls.SetChildIndex(this.lbl_posicion, 0);
-            this.Controls.SetChildIndex(this.btn_cerrar, 0);
-            this.Controls.SetChildIndex(this.btn_maximizar, 0);
-            this.Controls.SetChildIndex(this.btn_minimizar, 0);
-            this.Controls.SetChildIndex(this.gb_login, 0);
+            this.Text = "Frm_Log";
+            this.TopMost = true;
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gb_login.ResumeLayout(false);
             this.gb_login.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
+
         private System.Windows.Forms.GroupBox gb_login;
-        private System.Windows.Forms.Label lbl_titulo;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btn_Ingresar;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_contraseña;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_usuario;
-        public System.Windows.Forms.TextBox txt_clave;
-        public System.Windows.Forms.TextBox txt_usuario;
         private System.Windows.Forms.Label lbl_Contraseña;
         private System.Windows.Forms.Label lbl_Usuario;
+        public System.Windows.Forms.TextBox txt_usuario;
+        private System.Windows.Forms.Button btn_Login;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_contraseña;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_usuario;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox txt_clave;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_cerrar;
     }
 }
