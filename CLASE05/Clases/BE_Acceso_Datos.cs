@@ -14,8 +14,8 @@ namespace CLASE05.Clases
         SqlConnection Conexion = new SqlConnection();
         SqlCommand Cmd = new SqlCommand();
 
-        string cadena_conexion = "Data Source=DESKTOP-V2CUC0T\\SQLEXPRESS;Initial Catalog=TRATAMIENTO_ERRORES;Integrated Security=True";
-        //string cadena_conexion = "Data Source = 200.69.137.167,11333; Initial Catalog = BD3K7G15_2021; User ID = BD3K7G15_2021; Password=BDG15_3922";
+        //string cadena_conexion = "Data Source=DESKTOP-V2CUC0T\\SQLEXPRESS;Initial Catalog=TRATAMIENTO_ERRORES;Integrated Security=True";
+        string cadena_conexion = "Data Source = 200.69.137.167,11333; Initial Catalog = BD3K7G15_2021; User ID = BD3K7G15_2021; Password=BDG15_3922";
         private void Conectar()
         {
             Conexion.ConnectionString = cadena_conexion;
