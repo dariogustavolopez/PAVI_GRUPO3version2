@@ -38,7 +38,7 @@ namespace CLASE05.Clases
             get => TxtDato.ReadOnly;
             set => TxtDato.ReadOnly = value;
         }
-     
+     //
         public LabelText01()
         {
             InitializeComponent();
