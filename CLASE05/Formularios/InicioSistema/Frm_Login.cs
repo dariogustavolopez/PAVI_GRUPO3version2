@@ -48,12 +48,12 @@ namespace CLASE05.Formularios.InicioSistema
 
             if (usuario.Validar(txt_usuario.Text, txt_clave.Text) == NE_Usuarios.Validacion.correcta)
             {
-                MessageBox.Show("¡Bienvenido!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                //MessageBox.Show("¡Bienvenido!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this.Close();
             }
             else
                 MessageBox.Show("Los datos ingresados son incorrectos", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            this.Close();
+            
         }
 
         private void btn_cerrar_Click(object sender, EventArgs e)
