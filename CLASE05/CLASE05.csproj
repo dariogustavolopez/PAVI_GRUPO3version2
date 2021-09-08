@@ -105,11 +105,11 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
-    <Compile Include="F1.cs">
+    <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Especifico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="F1.Designer.cs">
-      <DependentUpon>F1.cs</DependentUpon>
+    <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Especifico.Designer.cs">
+      <DependentUpon>Frm_ABM_Usuario_Especifico.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmBASE\FrmBase.cs">
       <SubType>Form</SubType>
@@ -189,8 +189,8 @@
     <EmbeddedResource Include="Clases\TextBox02.resx">
       <DependentUpon>TextBox02.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="F1.resx">
-      <DependentUpon>F1.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuario_Especifico.resx">
+      <DependentUpon>Frm_ABM_Usuario_Especifico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmBASE\FrmBase.resx">
       <DependentUpon>FrmBase.cs</DependentUpon>
