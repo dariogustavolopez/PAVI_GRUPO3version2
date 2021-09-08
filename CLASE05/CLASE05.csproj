@@ -105,12 +105,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
-    <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Especifico.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Especifico.Designer.cs">
-      <DependentUpon>Frm_ABM_Usuario_Especifico.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\FrmBASE\FrmBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,11 +147,11 @@
     <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.Designer.cs">
       <DependentUpon>Frm_ABM_Usuario_Entrada.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Usuarios\Frm_Usuario.cs">
+    <Compile Include="Formularios\Usuarios\Frm_Base_Usuario_Datos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Usuarios\Frm_Usuario.Designer.cs">
-      <DependentUpon>Frm_Usuario.cs</DependentUpon>
+    <Compile Include="Formularios\Usuarios\Frm_Base_Usuario_Datos.Designer.cs">
+      <DependentUpon>Frm_Base_Usuario_Datos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Usuarios\Frm_Usuario_Alta.cs">
       <SubType>Form</SubType>
@@ -180,6 +174,9 @@
     <Compile Include="Negocios\NE_Usuarios.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Clases\ComboBox01.resx">
+      <DependentUpon>ComboBox01.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clases\LabelText01.resx">
       <DependentUpon>LabelText01.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,9 +185,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Clases\TextBox02.resx">
       <DependentUpon>TextBox02.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuario_Especifico.resx">
-      <DependentUpon>Frm_ABM_Usuario_Especifico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmBASE\FrmBase.resx">
       <DependentUpon>FrmBase.cs</DependentUpon>
@@ -213,8 +207,8 @@
     <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.resx">
       <DependentUpon>Frm_ABM_Usuario_Entrada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Usuarios\Frm_Usuario.resx">
-      <DependentUpon>Frm_Usuario.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_Base_Usuario_Datos.resx">
+      <DependentUpon>Frm_Base_Usuario_Datos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Usuarios\Frm_Usuario_Alta.resx">
       <DependentUpon>Frm_Usuario_Alta.cs</DependentUpon>
@@ -281,6 +275,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_modificar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_clear %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

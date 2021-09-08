@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace CLASE05.Formularios.Usuarios
 {
-    public partial class Frm_Usuario_borrar : CLASE05.Formularios.Usuarios.Frm_Usuario
+    public partial class Frm_Usuario_borrar : CLASE05.Formularios.Usuarios.Frm_Base_Usuario_Datos
     {
         public Frm_Usuario_borrar()
         {

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace CLASE05.Formularios.Usuarios
 {
-    public partial class Frm_Usuario : CLASE05.Formularios.FrmBASE.FrmBase
+    public partial class Frm_Base_Usuario_Datos : CLASE05.Formularios.FrmBASE.FrmBase
     {
         public string _Titulo
         {
@@ -16,7 +16,7 @@ namespace CLASE05.Formularios.Usuarios
         }
         public string id_usuario { get; set; }
 
-        public Frm_Usuario()
+        public Frm_Base_Usuario_Datos()
         {
             InitializeComponent();
         }
