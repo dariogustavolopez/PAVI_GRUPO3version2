@@ -121,16 +121,19 @@
   <data name="lbl_posicion.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbl_posicion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei, 12.75pt, style=Bold</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lbl_posicion.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lbl_posicion.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 4</value>
   </data>
   <data name="lbl_posicion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>61, 22</value>
   </data>
   <data name="lbl_posicion.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -156,13 +159,6 @@
   <data name="btn_minimizar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="btn_minimizar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAC0AAAAhCAIAAADCurW2AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAENJREFUWEft0SEOACEQBEH+/+k9gylDcihElx7Ryax5Qx2qQ3WoDtWhOlSH6tBN
-        xzrao5/6RXWoDtWhOlSH6tAbHTMf/h04tx0+VvIAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="btn_minimizar.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -173,10 +169,10 @@
     <value>NoControl</value>
   </data>
   <data name="btn_minimizar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>441, 4</value>
+    <value>466, 2</value>
   </data>
   <data name="btn_minimizar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 28</value>
+    <value>35, 28</value>
   </data>
   <data name="btn_minimizar.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -196,13 +192,6 @@
   <data name="btn_maximizar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="btn_maximizar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAC4AAAAgCAYAAABts0pHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAAE1JREFUWEftzsEJADAMw8Dsv3TaDeqHERQk8Nfc7KcJpxNOJ5xOOJ1wuhp8ZqK1
-        qsJfCb8JFx4mXHhYFZ6sVe8JTjidcDrhdMLphLPtHk+Nfrca5dONAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btn_maximizar.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -213,10 +202,10 @@
     <value>NoControl</value>
   </data>
   <data name="btn_maximizar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>484, 4</value>
+    <value>501, 2</value>
   </data>
   <data name="btn_maximizar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 28</value>
+    <value>35, 28</value>
   </data>
   <data name="btn_maximizar.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -236,14 +225,6 @@
   <data name="btn_cerrar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="btn_cerrar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAC4AAAAhCAYAAACm75niAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAAI9JREFUWEftzkEKACEMQ1Hvf2mHLAQX4rQ0DQj5G12U8MZ8NMPVGa7OcHWGqyvD
-        x4hPZG7/Ki0tSASUuY1UXomA2GhEWbrBOtCItnYCdqERdXGHdqIRfXWHdqGR4WhB8e7/jmirJ2gnnrJ4
-        A3bhy2sRWAe+tJQBsfHllQyEhUa8JXGGqzNcneHqDFf3KHzODzEzEjICFhn9AAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="btn_cerrar.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -254,10 +235,10 @@
     <value>NoControl</value>
   </data>
   <data name="btn_cerrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>527, 4</value>
+    <value>536, 2</value>
   </data>
   <data name="btn_cerrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 28</value>
+    <value>35, 28</value>
   </data>
   <data name="btn_cerrar.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -569,9 +550,6 @@
         /+AH////////4Af////////gB////////+AH////////4Af////////gB////////+AD////////wIAA
         AAAAAAABgAAAAAAAAAHAAAAAAAAAA+AAAAAAAAAH+AAAAAAAAB8=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>Manual</value>

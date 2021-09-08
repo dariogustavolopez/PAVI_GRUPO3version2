@@ -39,7 +39,7 @@ namespace CLASE05.Formularios.InicioSistema
             this.txt_usuario = new System.Windows.Forms.TextBox();
             this.lbl_Contraseña = new System.Windows.Forms.Label();
             this.lbl_Usuario = new System.Windows.Forms.Label();
-            this.btn_salir = new System.Windows.Forms.Button();
+            this.btn_cerrar = new System.Windows.Forms.Button();
             this.gb_login.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -176,21 +176,21 @@ namespace CLASE05.Formularios.InicioSistema
             this.lbl_Usuario.TabIndex = 0;
             this.lbl_Usuario.Text = "Username";
             // 
-            // btn_salir
+            // btn_cerrar
             // 
-            this.btn_salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btn_salir.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_salir.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.ForeColor = System.Drawing.Color.White;
-            this.btn_salir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_salir.Location = new System.Drawing.Point(532, 1);
-            this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(24, 25);
-            this.btn_salir.TabIndex = 10;
-            this.btn_salir.Text = "X";
-            this.btn_salir.UseVisualStyleBackColor = false;
-            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
+            this.btn_cerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.btn_cerrar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cerrar.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cerrar.ForeColor = System.Drawing.Color.White;
+            this.btn_cerrar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_cerrar.Location = new System.Drawing.Point(532, 1);
+            this.btn_cerrar.Name = "btn_cerrar";
+            this.btn_cerrar.Size = new System.Drawing.Size(24, 25);
+            this.btn_cerrar.TabIndex = 10;
+            this.btn_cerrar.Text = "X";
+            this.btn_cerrar.UseVisualStyleBackColor = false;
+            this.btn_cerrar.Click += new System.EventHandler(this.btn_salir_Click);
             // 
             // Frm_Log
             // 
@@ -199,7 +199,7 @@ namespace CLASE05.Formularios.InicioSistema
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(557, 237);
             this.Controls.Add(this.gb_login);
-            this.Controls.Add(this.btn_salir);
+            this.Controls.Add(this.btn_cerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -228,6 +228,6 @@ namespace CLASE05.Formularios.InicioSistema
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox txt_clave;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.Button btn_cerrar;
     }
 }

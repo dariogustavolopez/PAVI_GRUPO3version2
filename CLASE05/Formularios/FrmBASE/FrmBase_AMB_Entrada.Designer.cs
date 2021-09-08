@@ -41,33 +41,36 @@
             // 
             // btn_cerrar
             // 
-            this.btn_cerrar.FlatAppearance.BorderSize = 0;
-            this.btn_cerrar.Location = new System.Drawing.Point(560, 4);
+            this.btn_cerrar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_cerrar.Location = new System.Drawing.Point(571, 1);
             // 
             // btn_minimizar
             // 
-            this.btn_minimizar.FlatAppearance.BorderSize = 0;
-            this.btn_minimizar.Location = new System.Drawing.Point(474, 4);
+            this.btn_minimizar.BackgroundImage = global::CLASE05.Properties.Resources.btn_minimizar;
+            this.btn_minimizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_minimizar.Location = new System.Drawing.Point(501, 1);
             // 
             // btn_maximizar
             // 
-            this.btn_maximizar.FlatAppearance.BorderSize = 0;
-            this.btn_maximizar.Location = new System.Drawing.Point(517, 4);
+            this.btn_maximizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_maximizar.Location = new System.Drawing.Point(536, 1);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
             this.label1.Location = new System.Drawing.Point(34, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
+            this.label1.Size = new System.Drawing.Size(81, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Titulo";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btn_buscar);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft JhengHei", 12.75F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.Silver;
             this.groupBox1.Location = new System.Drawing.Point(12, 81);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(582, 113);
@@ -77,51 +80,65 @@
             // 
             // btn_buscar
             // 
-            this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_buscar.ForeColor = System.Drawing.Color.Black;
-            this.btn_buscar.Location = new System.Drawing.Point(501, 75);
+            this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.btn_buscar.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btn_buscar.ForeColor = System.Drawing.Color.Silver;
+            this.btn_buscar.Location = new System.Drawing.Point(491, 72);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(75, 27);
+            this.btn_buscar.Size = new System.Drawing.Size(85, 30);
             this.btn_buscar.TabIndex = 0;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = false;
             // 
             // btn_alta
             // 
-            this.btn_alta.BackgroundImage = global::CLASE05.Properties.Resources.agregar;
+            this.btn_alta.BackColor = System.Drawing.Color.Transparent;
+            this.btn_alta.BackgroundImage = global::CLASE05.Properties.Resources.btn_añadir__8_;
             this.btn_alta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_alta.Location = new System.Drawing.Point(9, 386);
+            this.btn_alta.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_alta.FlatAppearance.BorderSize = 0;
+            this.btn_alta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_alta.Location = new System.Drawing.Point(423, 391);
             this.btn_alta.Name = "btn_alta";
-            this.btn_alta.Size = new System.Drawing.Size(40, 41);
+            this.btn_alta.Size = new System.Drawing.Size(45, 45);
             this.btn_alta.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.btn_alta, "Permite ingresar al formulario de Altas de registro\r\n");
-            this.btn_alta.UseVisualStyleBackColor = true;
+            this.toolTip1.SetToolTip(this.btn_alta, "Crear nuevo registro\r\n");
+            this.btn_alta.UseVisualStyleBackColor = false;
             // 
             // btn_modificar
             // 
-            this.btn_modificar.BackgroundImage = global::CLASE05.Properties.Resources.modificar01;
+            this.btn_modificar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_modificar.BackgroundImage = global::CLASE05.Properties.Resources.btn_modificar__1_;
             this.btn_modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_modificar.Location = new System.Drawing.Point(55, 386);
+            this.btn_modificar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_modificar.FlatAppearance.BorderSize = 0;
+            this.btn_modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_modificar.Location = new System.Drawing.Point(484, 391);
             this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(40, 41);
+            this.btn_modificar.Size = new System.Drawing.Size(45, 45);
             this.btn_modificar.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.btn_modificar, "Permite el ingreso a el formulario de modificaciones");
-            this.btn_modificar.UseVisualStyleBackColor = true;
+            this.toolTip1.SetToolTip(this.btn_modificar, "Modificar registro");
+            this.btn_modificar.UseVisualStyleBackColor = false;
             // 
             // btn_borrar
             // 
-            this.btn_borrar.BackgroundImage = global::CLASE05.Properties.Resources.cancelar4;
+            this.btn_borrar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_borrar.BackgroundImage = global::CLASE05.Properties.Resources.btn_eliminar__2_;
             this.btn_borrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_borrar.Location = new System.Drawing.Point(101, 386);
+            this.btn_borrar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_borrar.FlatAppearance.BorderSize = 0;
+            this.btn_borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_borrar.Location = new System.Drawing.Point(544, 388);
             this.btn_borrar.Name = "btn_borrar";
-            this.btn_borrar.Size = new System.Drawing.Size(40, 41);
+            this.btn_borrar.Size = new System.Drawing.Size(50, 50);
             this.btn_borrar.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.btn_borrar, "Permite el ingreso al formulario de borrado");
-            this.btn_borrar.UseVisualStyleBackColor = true;
+            this.toolTip1.SetToolTip(this.btn_borrar, "Eliminar registro");
+            this.btn_borrar.UseVisualStyleBackColor = false;
             // 
-            // FrmBase_AMB_
+            // FrmBase_AMB_Entrada
             // 
             this._FormularioMovil = true;
+            this._PosiciónVisible = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(606, 439);
             this.Controls.Add(this.btn_borrar);
@@ -129,8 +146,9 @@
             this.Controls.Add(this.btn_alta);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "FrmBase_AMB_";
+            this.Name = "FrmBase_AMB_Entrada";
             this.toolTip1.SetToolTip(this, "Permite ingresar al formulario de Altas de registros\r\n");
+            this.Controls.SetChildIndex(this.lbl_posicion, 0);
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);
             this.Controls.SetChildIndex(this.btn_minimizar, 0);

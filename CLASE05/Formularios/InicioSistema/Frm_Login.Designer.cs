@@ -1,18 +1,16 @@
-﻿using System;
-
-namespace CLASE05.Formularios.InicioSistema
+﻿namespace CLASE05.Formularios.InicioSistema
 {
     partial class Frm_Login
     {
         /// <summary>
-        /// Required designer variable.
+        /// Variable del diseñador necesaria.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Limpiar los recursos que se estén usando.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,126 +20,211 @@ namespace CLASE05.Formularios.InicioSistema
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Código generado por el Diseñador de Windows Forms
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_usuario = new System.Windows.Forms.TextBox();
-            this.txt_clave = new System.Windows.Forms.TextBox();
+            this.gb_login = new System.Windows.Forms.GroupBox();
+            this.lbl_titulo = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.btn_Ingresar = new System.Windows.Forms.Button();
-            this.btn_cancelar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.flowLayoutPanel_contraseña = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel_usuario = new System.Windows.Forms.FlowLayoutPanel();
+            this.txt_clave = new System.Windows.Forms.TextBox();
+            this.txt_usuario = new System.Windows.Forms.TextBox();
+            this.lbl_Contraseña = new System.Windows.Forms.Label();
+            this.lbl_Usuario = new System.Windows.Forms.Label();
+            this.gb_login.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // btn_cerrar
             // 
-            this.pictureBox1.BackgroundImage = global::CLASE05.Properties.Resources.candado;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 42);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(84, 72);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.btn_cerrar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_cerrar.Location = new System.Drawing.Point(532, 1);
+            this.btn_cerrar.Size = new System.Drawing.Size(24, 25);
+            this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
             // 
-            // label1
+            // btn_minimizar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(129, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Usuario";
+            this.btn_minimizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_minimizar.FlatAppearance.BorderSize = 0;
+            this.btn_minimizar.Location = new System.Drawing.Point(433, 2);
+            this.btn_minimizar.Visible = false;
             // 
-            // label2
+            // btn_maximizar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(145, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Clave";
+            this.btn_maximizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_maximizar.FlatAppearance.BorderSize = 0;
+            this.btn_maximizar.Location = new System.Drawing.Point(474, 2);
+            this.btn_maximizar.Visible = false;
             // 
-            // txt_usuario
+            // gb_login
             // 
-            this.txt_usuario.Location = new System.Drawing.Point(199, 39);
-            this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(100, 26);
-            this.txt_usuario.TabIndex = 0;
+            this.gb_login.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gb_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.gb_login.Controls.Add(this.lbl_titulo);
+            this.gb_login.Controls.Add(this.label5);
+            this.gb_login.Controls.Add(this.btn_Ingresar);
+            this.gb_login.Controls.Add(this.flowLayoutPanel_contraseña);
+            this.gb_login.Controls.Add(this.flowLayoutPanel_usuario);
+            this.gb_login.Controls.Add(this.txt_clave);
+            this.gb_login.Controls.Add(this.txt_usuario);
+            this.gb_login.Controls.Add(this.lbl_Contraseña);
+            this.gb_login.Controls.Add(this.lbl_Usuario);
+            this.gb_login.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gb_login.Location = new System.Drawing.Point(1, 26);
+            this.gb_login.Name = "gb_login";
+            this.gb_login.Size = new System.Drawing.Size(555, 210);
+            this.gb_login.TabIndex = 15;
+            this.gb_login.TabStop = false;
             // 
-            // txt_clave
+            // lbl_titulo
             // 
-            this.txt_clave.Location = new System.Drawing.Point(199, 71);
-            this.txt_clave.Name = "txt_clave";
-            this.txt_clave.PasswordChar = '*';
-            this.txt_clave.Size = new System.Drawing.Size(100, 26);
-            this.txt_clave.TabIndex = 1;
+            this.lbl_titulo.AutoSize = true;
+            this.lbl_titulo.Font = new System.Drawing.Font("Microsoft JhengHei", 12.75F, System.Drawing.FontStyle.Bold);
+            this.lbl_titulo.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_titulo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbl_titulo.Location = new System.Drawing.Point(236, 14);
+            this.lbl_titulo.Name = "lbl_titulo";
+            this.lbl_titulo.Size = new System.Drawing.Size(99, 22);
+            this.lbl_titulo.TabIndex = 13;
+            this.lbl_titulo.Text = "User Login";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.DimGray;
+            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label5.Location = new System.Drawing.Point(110, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(331, 20);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "______________________________________________";
             // 
             // btn_Ingresar
             // 
-            this.btn_Ingresar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_Ingresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Ingresar.Location = new System.Drawing.Point(133, 103);
+            this.btn_Ingresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
+            this.btn_Ingresar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Ingresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Ingresar.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btn_Ingresar.ForeColor = System.Drawing.Color.White;
+            this.btn_Ingresar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_Ingresar.Location = new System.Drawing.Point(181, 152);
             this.btn_Ingresar.Name = "btn_Ingresar";
-            this.btn_Ingresar.Size = new System.Drawing.Size(82, 32);
-            this.btn_Ingresar.TabIndex = 2;
-            this.btn_Ingresar.Text = "Ingresar";
+            this.btn_Ingresar.Size = new System.Drawing.Size(236, 37);
+            this.btn_Ingresar.TabIndex = 7;
+            this.btn_Ingresar.Text = "Login";
             this.btn_Ingresar.UseVisualStyleBackColor = false;
-            this.btn_Ingresar.Click += new System.EventHandler(this.btn_Ingresar_Click);
             // 
-            // btn_cancelar
+            // flowLayoutPanel_contraseña
             // 
-            this.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar.Location = new System.Drawing.Point(217, 103);
-            this.btn_cancelar.Name = "btn_cancelar";
-            this.btn_cancelar.Size = new System.Drawing.Size(82, 32);
-            this.btn_cancelar.TabIndex = 3;
-            this.btn_cancelar.Text = "Cancelar";
-            this.btn_cancelar.UseVisualStyleBackColor = false;
-            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
+            this.flowLayoutPanel_contraseña.BackgroundImage = global::CLASE05.Properties.Resources.images;
+            this.flowLayoutPanel_contraseña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel_contraseña.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flowLayoutPanel_contraseña.Location = new System.Drawing.Point(423, 107);
+            this.flowLayoutPanel_contraseña.Name = "flowLayoutPanel_contraseña";
+            this.flowLayoutPanel_contraseña.Size = new System.Drawing.Size(26, 29);
+            this.flowLayoutPanel_contraseña.TabIndex = 5;
+            // 
+            // flowLayoutPanel_usuario
+            // 
+            this.flowLayoutPanel_usuario.BackgroundImage = global::CLASE05.Properties.Resources.images__1_;
+            this.flowLayoutPanel_usuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel_usuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flowLayoutPanel_usuario.Location = new System.Drawing.Point(423, 58);
+            this.flowLayoutPanel_usuario.Name = "flowLayoutPanel_usuario";
+            this.flowLayoutPanel_usuario.Size = new System.Drawing.Size(26, 27);
+            this.flowLayoutPanel_usuario.TabIndex = 4;
+            // 
+            // txt_clave
+            // 
+            this.txt_clave.AcceptsTab = true;
+            this.txt_clave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.txt_clave.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_clave.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold);
+            this.txt_clave.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.txt_clave.Location = new System.Drawing.Point(181, 107);
+            this.txt_clave.Name = "txt_clave";
+            this.txt_clave.PasswordChar = '*';
+            this.txt_clave.Size = new System.Drawing.Size(236, 29);
+            this.txt_clave.TabIndex = 2;
+            this.txt_clave.UseSystemPasswordChar = true;
+            // 
+            // txt_usuario
+            // 
+            this.txt_usuario.AcceptsTab = true;
+            this.txt_usuario.AccessibleDescription = "";
+            this.txt_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.txt_usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F);
+            this.txt_usuario.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.txt_usuario.Location = new System.Drawing.Point(181, 58);
+            this.txt_usuario.Name = "txt_usuario";
+            this.txt_usuario.Size = new System.Drawing.Size(236, 27);
+            this.txt_usuario.TabIndex = 1;
+            // 
+            // lbl_Contraseña
+            // 
+            this.lbl_Contraseña.AutoSize = true;
+            this.lbl_Contraseña.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold);
+            this.lbl_Contraseña.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_Contraseña.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbl_Contraseña.Location = new System.Drawing.Point(91, 109);
+            this.lbl_Contraseña.Name = "lbl_Contraseña";
+            this.lbl_Contraseña.Size = new System.Drawing.Size(84, 21);
+            this.lbl_Contraseña.TabIndex = 1;
+            this.lbl_Contraseña.Text = "Password";
+            // 
+            // lbl_Usuario
+            // 
+            this.lbl_Usuario.AutoSize = true;
+            this.lbl_Usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold);
+            this.lbl_Usuario.ForeColor = System.Drawing.Color.Silver;
+            this.lbl_Usuario.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbl_Usuario.Location = new System.Drawing.Point(91, 59);
+            this.lbl_Usuario.Name = "lbl_Usuario";
+            this.lbl_Usuario.Size = new System.Drawing.Size(88, 21);
+            this.lbl_Usuario.TabIndex = 0;
+            this.lbl_Usuario.Text = "Username";
             // 
             // Frm_Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 145);
-            this.ControlBox = false;
-            this.Controls.Add(this.btn_cancelar);
-            this.Controls.Add(this.btn_Ingresar);
-            this.Controls.Add(this.txt_clave);
-            this.Controls.Add(this.txt_usuario);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this._PosiciónVisible = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.ClientSize = new System.Drawing.Size(557, 237);
+            this.Controls.Add(this.gb_login);
             this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Controls.SetChildIndex(this.lbl_posicion, 0);
+            this.Controls.SetChildIndex(this.btn_cerrar, 0);
+            this.Controls.SetChildIndex(this.btn_maximizar, 0);
+            this.Controls.SetChildIndex(this.btn_minimizar, 0);
+            this.Controls.SetChildIndex(this.gb_login, 0);
+            this.gb_login.ResumeLayout(false);
+            this.gb_login.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_usuario;
-        private System.Windows.Forms.TextBox txt_clave;
+        private System.Windows.Forms.GroupBox gb_login;
+        private System.Windows.Forms.Label lbl_titulo;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn_Ingresar;
-        private System.Windows.Forms.Button btn_cancelar;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_contraseña;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_usuario;
+        public System.Windows.Forms.TextBox txt_clave;
+        public System.Windows.Forms.TextBox txt_usuario;
+        private System.Windows.Forms.Label lbl_Contraseña;
+        private System.Windows.Forms.Label lbl_Usuario;
     }
 }
