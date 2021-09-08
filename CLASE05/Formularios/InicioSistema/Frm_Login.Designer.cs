@@ -41,12 +41,15 @@
             this.gb_login.SuspendLayout();
             this.SuspendLayout();
             // 
+<<<<<<< HEAD
             // lbl_posicion
             // 
             this.lbl_posicion.Location = new System.Drawing.Point(12, 4);
             this.lbl_posicion.Size = new System.Drawing.Size(0, 22);
             this.lbl_posicion.Text = "";
             // 
+=======
+>>>>>>> b2
             // btn_cerrar
             // 
             this.btn_cerrar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
@@ -68,6 +71,13 @@
             this.btn_maximizar.Location = new System.Drawing.Point(474, 2);
             this.btn_maximizar.Visible = false;
             // 
+<<<<<<< HEAD
+=======
+            // lbl_posicion
+            // 
+            this.lbl_posicion.Location = new System.Drawing.Point(12, 4);
+            // 
+>>>>>>> b2
             // gb_login
             // 
             this.gb_login.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 

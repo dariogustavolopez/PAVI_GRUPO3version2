@@ -163,6 +163,19 @@ namespace CLASE05.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
+=======
+        internal static System.Drawing.Bitmap btn_clear__2_ {
+            get {
+                object obj = ResourceManager.GetObject("btn_clear (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+>>>>>>> b2
         internal static System.Drawing.Bitmap btn_eliminar__2_ {
             get {
                 object obj = ResourceManager.GetObject("btn_eliminar (2)", resourceCulture);

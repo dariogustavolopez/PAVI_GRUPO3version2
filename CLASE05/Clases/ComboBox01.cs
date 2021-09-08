@@ -5,16 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
+using System.Drawing;
 
 namespace CLASE05.Clases
 {
     public class ComboBox01 : ComboBox
     {
+
         public bool _Validable { get; set; }
         public string _Nombre_campo { get; set; }
         public string _Nombre_tabla { get; set; }
         public string _MensajeError { get; set; }
         public bool _ComboSinSeleccion { get; set; } = false;
+
+        //public bool _Formatear { get; set; } = true;
 
         public string _tabla_cargar_combo { get; set; }
         public string _tabla_cargar_descriptor { get; set; }
@@ -41,6 +45,20 @@ namespace CLASE05.Clases
                 this.SelectedIndex = -1;
             else
                 this.SelectedIndex = 0;
+        }
+
+        public void Formatear()
+        {
+            this.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Font = new Font("Microsoft JhengHei", 10);
+            this.BackColor = Color.FromArgb(255, 25, 25, 25);
+        }
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            this.ResumeLayout(false);
+            //this.Formatear();
+
         }
     }
 }
