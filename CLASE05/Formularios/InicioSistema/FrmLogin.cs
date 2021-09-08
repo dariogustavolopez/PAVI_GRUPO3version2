@@ -32,28 +32,28 @@ namespace CLASE05.Formularios.InicioSistema
 
         private void btn_Ingresar_Click(object sender, EventArgs e)
         {
-            if (txt_usuario.Text == "")
-            {
-                MessageBox.Show("Falta carga el nombre del usuario", "Importante"
-                              , MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                return;
-            }
-            if (txt_clave.Text == "")
-            {
-                MessageBox.Show("Falta carga la clave del usuario", "Importante"
-               , MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                return;
-            }
-            NE_Usuarios usuario = new NE_Usuarios();
+            //if (txt_usuario.Text == "")
+            //{
+            //    MessageBox.Show("Falta carga el nombre del usuario", "Importante"
+            //                  , MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            //    return;
+            //}
+            //if (txt_clave.Text == "")
+            //{
+            //    MessageBox.Show("Falta carga la clave del usuario", "Importante"
+            //   , MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            //    return;
+            //}
+            //NE_Usuarios usuario = new NE_Usuarios();
 
-            if (usuario.Validar(txt_usuario.Text, txt_clave.Text) == NE_Usuarios.Validacion.correcta)
-            {
-                MessageBox.Show("Validación Correcta", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                this.Close();
-            }
-            else
-                MessageBox.Show("Validación Incorrecta", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-
+            //if (usuario.Validar(txt_usuario.Text, txt_clave.Text) == NE_Usuarios.Validacion.correcta)
+            //{
+            //    MessageBox.Show("Validación Correcta", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            //    this.Close();
+            //}
+            //else
+            //    MessageBox.Show("Validación Incorrecta", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            this.Close();
         }
 
         private void btn_cerrar_Click(object sender, EventArgs e)

@@ -29,15 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBase));
+            this.lbl_posicion = new System.Windows.Forms.Label();
             this.btn_minimizar = new System.Windows.Forms.Button();
             this.btn_maximizar = new System.Windows.Forms.Button();
             this.btn_cerrar = new System.Windows.Forms.Button();
-            this.lbl_posicion = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lbl_posicion
+            // 
+            resources.ApplyResources(this.lbl_posicion, "lbl_posicion");
+            this.lbl_posicion.Name = "lbl_posicion";
             // 
             // btn_minimizar
             // 
             resources.ApplyResources(this.btn_minimizar, "btn_minimizar");
+            this.btn_minimizar.BackColor = System.Drawing.SystemColors.Control;
             this.btn_minimizar.FlatAppearance.BorderSize = 0;
             this.btn_minimizar.Name = "btn_minimizar";
             this.btn_minimizar.UseVisualStyleBackColor = false;
@@ -62,11 +68,6 @@
             this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
             this.btn_cerrar.MouseLeave += new System.EventHandler(this.btn_cerrar_MouseLeave);
             this.btn_cerrar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btn_cerrar_MouseMove);
-            // 
-            // lbl_posicion
-            // 
-            resources.ApplyResources(this.lbl_posicion, "lbl_posicion");
-            this.lbl_posicion.Name = "lbl_posicion";
             // 
             // FrmBase
             // 
