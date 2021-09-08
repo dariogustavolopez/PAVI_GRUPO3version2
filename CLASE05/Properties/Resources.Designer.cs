@@ -63,6 +63,26 @@ namespace CLASE05.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2404622_abstrakt_vitt_guld_lyx_bakgrund_vektor_illustration_gratis_vector {
+            get {
+                object obj = ResourceManager.GetObject("2404622-abstrakt-vitt-guld-lyx-bakgrund-vektor-illustration-gratis-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3982331 {
+            get {
+                object obj = ResourceManager.GetObject("3982331", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap agregar {
             get {
                 object obj = ResourceManager.GetObject("agregar", resourceCulture);
@@ -113,6 +133,16 @@ namespace CLASE05.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondo_de_lujo_dorado_y_blanco_abstracto_oro_en_vector_208509820 {
+            get {
+                object obj = ResourceManager.GetObject("fondo-de-lujo-dorado-y-blanco-abstracto-oro-en-vector-208509820", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
@@ -126,6 +156,26 @@ namespace CLASE05.Properties {
         internal static System.Drawing.Bitmap images__1_ {
             get {
                 object obj = ResourceManager.GetObject("images (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Luxury_Business_Presentation5 {
+            get {
+                object obj = ResourceManager.GetObject("Luxury Business Presentation5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Luxury_Business_Presentation6 {
+            get {
+                object obj = ResourceManager.GetObject("Luxury Business Presentation6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

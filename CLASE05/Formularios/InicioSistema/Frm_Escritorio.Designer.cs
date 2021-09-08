@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Escritorio));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,15 +69,15 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // salirDeSistemaConLoginActivoToolStripMenuItem
             // 
             this.salirDeSistemaConLoginActivoToolStripMenuItem.Name = "salirDeSistemaConLoginActivoToolStripMenuItem";
-            this.salirDeSistemaConLoginActivoToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.salirDeSistemaConLoginActivoToolStripMenuItem.Text = "Salir de Sistema Con Login Activo";
+            this.salirDeSistemaConLoginActivoToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.salirDeSistemaConLoginActivoToolStripMenuItem.Text = "Cerrar sesión";
             this.salirDeSistemaConLoginActivoToolStripMenuItem.Click += new System.EventHandler(this.salirDeSistemaConLoginActivoToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
@@ -122,15 +123,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Aqua;
+            this.BackColor = System.Drawing.Color.MintCream;
+            this.BackgroundImage = global::CLASE05.Properties.Resources.Luxury_Business_Presentation5;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(656, 373);
             this.ControlBox = false;
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Frm_Escritorio";
-            this.Text = "Escritorio de Diseño del Sistema";
+            this.Text = "App Mayortic";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Frm_Escritorio_Load);
             this.menuStrip1.ResumeLayout(false);

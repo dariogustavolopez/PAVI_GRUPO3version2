@@ -28,7 +28,7 @@ namespace CLASE05.Formularios.InicioSistema
 
         private void Frm_Escritorio_Load(object sender, EventArgs e)
         {
-            this.Plogin();
+            //this.Plogin();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace CLASE05.Formularios.InicioSistema
             this.clave = "";
             this.id_usuario = 0;
 
-            FrmLogin login = new FrmLogin();
+            Frm_Log login = new Frm_Log();
             login.ShowDialog();
             if (login.Pp_usuario == "")
             {

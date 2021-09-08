@@ -30,15 +30,15 @@ namespace CLASE05.Formularios.InicioSistema
         private void InitializeComponent()
         {
             this.gb_login = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_Login = new System.Windows.Forms.Button();
-            this.txt_Contraseña = new System.Windows.Forms.TextBox();
-            this.txt_Usuario = new System.Windows.Forms.TextBox();
-            this.lbl_Contraseña = new System.Windows.Forms.Label();
-            this.lbl_Usuario = new System.Windows.Forms.Label();
             this.flowLayoutPanel_contraseña = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel_usuario = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txt_clave = new System.Windows.Forms.TextBox();
+            this.txt_usuario = new System.Windows.Forms.TextBox();
+            this.lbl_Contraseña = new System.Windows.Forms.Label();
+            this.lbl_Usuario = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             this.gb_login.SuspendLayout();
             this.SuspendLayout();
@@ -54,8 +54,8 @@ namespace CLASE05.Formularios.InicioSistema
             this.gb_login.Controls.Add(this.btn_Login);
             this.gb_login.Controls.Add(this.flowLayoutPanel_contraseña);
             this.gb_login.Controls.Add(this.flowLayoutPanel_usuario);
-            this.gb_login.Controls.Add(this.txt_Contraseña);
-            this.gb_login.Controls.Add(this.txt_Usuario);
+            this.gb_login.Controls.Add(this.txt_clave);
+            this.gb_login.Controls.Add(this.txt_usuario);
             this.gb_login.Controls.Add(this.lbl_Contraseña);
             this.gb_login.Controls.Add(this.lbl_Usuario);
             this.gb_login.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -64,6 +64,18 @@ namespace CLASE05.Formularios.InicioSistema
             this.gb_login.Size = new System.Drawing.Size(555, 210);
             this.gb_login.TabIndex = 0;
             this.gb_login.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 12.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(236, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 22);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "User Login";
             // 
             // label3
             // 
@@ -93,32 +105,52 @@ namespace CLASE05.Formularios.InicioSistema
             this.btn_Login.UseVisualStyleBackColor = false;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
-            // txt_Contraseña
+            // flowLayoutPanel_contraseña
             // 
-            this.txt_Contraseña.AcceptsTab = true;
-            this.txt_Contraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.txt_Contraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Contraseña.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold);
-            this.txt_Contraseña.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.txt_Contraseña.Location = new System.Drawing.Point(181, 107);
-            this.txt_Contraseña.Name = "txt_Contraseña";
-            this.txt_Contraseña.PasswordChar = '*';
-            this.txt_Contraseña.Size = new System.Drawing.Size(236, 29);
-            this.txt_Contraseña.TabIndex = 2;
-            this.txt_Contraseña.UseSystemPasswordChar = true;
+            this.flowLayoutPanel_contraseña.BackgroundImage = global::CLASE05.Properties.Resources.images;
+            this.flowLayoutPanel_contraseña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel_contraseña.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flowLayoutPanel_contraseña.Location = new System.Drawing.Point(423, 107);
+            this.flowLayoutPanel_contraseña.Name = "flowLayoutPanel_contraseña";
+            this.flowLayoutPanel_contraseña.Size = new System.Drawing.Size(26, 29);
+            this.flowLayoutPanel_contraseña.TabIndex = 5;
             // 
-            // txt_Usuario
+            // flowLayoutPanel_usuario
             // 
-            this.txt_Usuario.AcceptsTab = true;
-            this.txt_Usuario.AccessibleDescription = "";
-            this.txt_Usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.txt_Usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F);
-            this.txt_Usuario.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.txt_Usuario.Location = new System.Drawing.Point(181, 58);
-            this.txt_Usuario.Name = "txt_Usuario";
-            this.txt_Usuario.Size = new System.Drawing.Size(236, 27);
-            this.txt_Usuario.TabIndex = 1;
+            this.flowLayoutPanel_usuario.BackgroundImage = global::CLASE05.Properties.Resources.images__1_;
+            this.flowLayoutPanel_usuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel_usuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flowLayoutPanel_usuario.Location = new System.Drawing.Point(423, 58);
+            this.flowLayoutPanel_usuario.Name = "flowLayoutPanel_usuario";
+            this.flowLayoutPanel_usuario.Size = new System.Drawing.Size(26, 27);
+            this.flowLayoutPanel_usuario.TabIndex = 4;
+            // 
+            // txt_clave
+            // 
+            this.txt_clave.AcceptsTab = true;
+            this.txt_clave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.txt_clave.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_clave.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold);
+            this.txt_clave.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.txt_clave.Location = new System.Drawing.Point(181, 107);
+            this.txt_clave.Name = "txt_clave";
+            this.txt_clave.PasswordChar = '*';
+            this.txt_clave.Size = new System.Drawing.Size(236, 29);
+            this.txt_clave.TabIndex = 2;
+            this.txt_clave.UseSystemPasswordChar = true;
+            // 
+            // txt_usuario
+            // 
+            this.txt_usuario.AcceptsTab = true;
+            this.txt_usuario.AccessibleDescription = "";
+            this.txt_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.txt_usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F);
+            this.txt_usuario.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.txt_usuario.Location = new System.Drawing.Point(181, 58);
+            this.txt_usuario.Name = "txt_usuario";
+            this.txt_usuario.Size = new System.Drawing.Size(236, 27);
+            this.txt_usuario.TabIndex = 1;
             // 
             // lbl_Contraseña
             // 
@@ -143,38 +175,6 @@ namespace CLASE05.Formularios.InicioSistema
             this.lbl_Usuario.Size = new System.Drawing.Size(88, 21);
             this.lbl_Usuario.TabIndex = 0;
             this.lbl_Usuario.Text = "Username";
-            // 
-            // flowLayoutPanel_contraseña
-            // 
-            this.flowLayoutPanel_contraseña.BackgroundImage = global::CLASE05.Properties.Resources.images;
-            this.flowLayoutPanel_contraseña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel_contraseña.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel_contraseña.Location = new System.Drawing.Point(423, 107);
-            this.flowLayoutPanel_contraseña.Name = "flowLayoutPanel_contraseña";
-            this.flowLayoutPanel_contraseña.Size = new System.Drawing.Size(26, 29);
-            this.flowLayoutPanel_contraseña.TabIndex = 5;
-            // 
-            // flowLayoutPanel_usuario
-            // 
-            this.flowLayoutPanel_usuario.BackgroundImage = global::CLASE05.Properties.Resources.images__1_;
-            this.flowLayoutPanel_usuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel_usuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel_usuario.Location = new System.Drawing.Point(423, 58);
-            this.flowLayoutPanel_usuario.Name = "flowLayoutPanel_usuario";
-            this.flowLayoutPanel_usuario.Size = new System.Drawing.Size(26, 27);
-            this.flowLayoutPanel_usuario.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 12.75F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(236, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 22);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "User Login";
             // 
             // btn_salir
             // 
@@ -221,12 +221,12 @@ namespace CLASE05.Formularios.InicioSistema
         private System.Windows.Forms.GroupBox gb_login;
         private System.Windows.Forms.Label lbl_Contraseña;
         private System.Windows.Forms.Label lbl_Usuario;
-        public System.Windows.Forms.TextBox txt_Usuario;
+        public System.Windows.Forms.TextBox txt_usuario;
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_contraseña;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_usuario;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox txt_Contraseña;
+        public System.Windows.Forms.TextBox txt_clave;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_salir;
     }
