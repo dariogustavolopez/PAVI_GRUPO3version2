@@ -38,13 +38,16 @@
             // lbl_posicion
             // 
             resources.ApplyResources(this.lbl_posicion, "lbl_posicion");
+            this.lbl_posicion.ForeColor = System.Drawing.Color.Silver;
             this.lbl_posicion.Name = "lbl_posicion";
             // 
             // btn_minimizar
             // 
             resources.ApplyResources(this.btn_minimizar, "btn_minimizar");
             this.btn_minimizar.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_minimizar.FlatAppearance.BorderSize = 0;
+            this.btn_minimizar.BackgroundImage = global::CLASE05.Properties.Resources.btn_minimizar;
+            this.btn_minimizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_minimizar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn_minimizar.Name = "btn_minimizar";
             this.btn_minimizar.UseVisualStyleBackColor = false;
             this.btn_minimizar.MouseLeave += new System.EventHandler(this.btn_minimizar_MouseLeave);
@@ -53,7 +56,8 @@
             // btn_maximizar
             // 
             resources.ApplyResources(this.btn_maximizar, "btn_maximizar");
-            this.btn_maximizar.FlatAppearance.BorderSize = 0;
+            this.btn_maximizar.BackgroundImage = global::CLASE05.Properties.Resources.btn_maximizar;
+            this.btn_maximizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btn_maximizar.Name = "btn_maximizar";
             this.btn_maximizar.UseVisualStyleBackColor = false;
             this.btn_maximizar.MouseLeave += new System.EventHandler(this.btn_maximizar_MouseLeave);
@@ -62,7 +66,8 @@
             // btn_cerrar
             // 
             resources.ApplyResources(this.btn_cerrar, "btn_cerrar");
-            this.btn_cerrar.FlatAppearance.BorderSize = 0;
+            this.btn_cerrar.BackgroundImage = global::CLASE05.Properties.Resources.btn_cerrar;
+            this.btn_cerrar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.UseVisualStyleBackColor = false;
             this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
@@ -73,6 +78,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.Controls.Add(this.lbl_posicion);
             this.Controls.Add(this.btn_minimizar);
             this.Controls.Add(this.btn_maximizar);
@@ -88,9 +94,9 @@
         }
 
         #endregion
-        protected System.Windows.Forms.Button btn_cerrar;
-        protected System.Windows.Forms.Button btn_minimizar;
-        protected System.Windows.Forms.Button btn_maximizar;
-        private System.Windows.Forms.Label lbl_posicion;
+        public System.Windows.Forms.Label lbl_posicion;
+        public System.Windows.Forms.Button btn_cerrar;
+        public System.Windows.Forms.Button btn_minimizar;
+        public System.Windows.Forms.Button btn_maximizar;
     }
 }

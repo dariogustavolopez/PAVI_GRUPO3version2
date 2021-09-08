@@ -28,7 +28,7 @@ namespace CLASE05.Formularios.InicioSistema
 
         private void Frm_Escritorio_Load(object sender, EventArgs e)
         {
-            //this.Plogin();
+            this.Plogin();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
