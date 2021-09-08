@@ -38,20 +38,20 @@ namespace CLASE05.Formularios.FrmBASE
 
         private void btn_minimizar_MouseMove(object sender, MouseEventArgs e)
         {
-            this.btn_minimizar.BackgroundImage = CLASE05.Properties.Resources.minimizar_g;
+            this.btn_minimizar.BackgroundImage = CLASE05.Properties.Resources.btn_minimizar;
         }
 
         private void btn_minimizar_MouseLeave(object sender, EventArgs e)
         {
-            this.btn_minimizar.BackgroundImage = CLASE05.Properties.Resources.minimizar;
+            this.btn_minimizar.BackgroundImage = CLASE05.Properties.Resources.btn_minimizar;
         }
         private void btn_maximizar_MouseMove(object sender, MouseEventArgs e)
         {
-            this.btn_maximizar.BackgroundImage = CLASE05.Properties.Resources.maximizar_g;
+            this.btn_maximizar.BackgroundImage = CLASE05.Properties.Resources.btn_maximizar;
         }
         private void btn_maximizar_MouseLeave(object sender, EventArgs e)
         {
-            this.btn_maximizar.BackgroundImage = CLASE05.Properties.Resources.maximizar;
+            this.btn_maximizar.BackgroundImage = CLASE05.Properties.Resources.btn_maximizar;
         }
         private void btn_cerrar_MouseMove(object sender, MouseEventArgs e)
         {
@@ -59,7 +59,7 @@ namespace CLASE05.Formularios.FrmBASE
         }
         private void btn_cerrar_MouseLeave(object sender, EventArgs e)
         {
-            this.btn_cerrar.BackgroundImage = CLASE05.Properties.Resources.cerrar;
+            this.btn_cerrar.BackgroundImage = CLASE05.Properties.Resources.btn_cerrar;
         }
         private void FrmBase_MouseDown(object sender, MouseEventArgs e)
         {
