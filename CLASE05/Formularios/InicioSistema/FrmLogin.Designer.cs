@@ -2,7 +2,7 @@
 
 namespace CLASE05.Formularios.InicioSistema
 {
-    partial class Frm_Login1
+    partial class FrmLogin
     {
         /// <summary>
         /// Required designer variable.
