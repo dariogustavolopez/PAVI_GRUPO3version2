@@ -250,49 +250,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\candado.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minimizar.png" />
-    <None Include="Resources\maximizar_g.png" />
-    <None Include="Resources\maximizar.png" />
-    <None Include="Resources\cerrar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minimizar_g.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cerrar_r.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\images %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\agregar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\modificar01.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cancelar4.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\2404622-abstrakt-vitt-guld-lyx-bakgrund-vektor-illustration-gratis-vector.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\3982331.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fondo-de-lujo-dorado-y-blanco-abstracto-oro-en-vector-208509820.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Luxury Business Presentation5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Luxury Business Presentation6.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pc-icon-32255.png" />
@@ -307,43 +274,13 @@
     <None Include="Resources\btn_minimizar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn_añadir %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn_añadir %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn_añadir %284%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\btn_añadir %288%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_eliminar %282%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn_eliminar %284%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn_eliminar %286%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn_eliminar %287%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\btn_modificar %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn_modificar %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn_modificar %286%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn_añadir %283%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btn_añadir %2810%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
