@@ -111,11 +111,11 @@
     <Compile Include="Formularios\FrmBASE\FrmBase.Designer.cs">
       <DependentUpon>FrmBase.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmBASE\FrmBase_AMB_Entrada.cs">
+    <Compile Include="Formularios\FrmBASE\FrmBase_ABM_Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmBASE\FrmBase_AMB_Entrada.Designer.cs">
-      <DependentUpon>FrmBase_AMB_Entrada.cs</DependentUpon>
+    <Compile Include="Formularios\FrmBASE\FrmBase_ABM_Entrada.Designer.cs">
+      <DependentUpon>FrmBase_ABM_Entrada.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\InicioSistema\Frm_Login.cs">
       <SubType>Form</SubType>
@@ -135,23 +135,17 @@
     <Compile Include="Formularios\InicioSistema\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Prioridades\Frm_ABM_Prioridades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Prioridades\Frm_ABM_Prioridades.Designer.cs">
-      <DependentUpon>Frm_ABM_Prioridades.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.Designer.cs">
       <DependentUpon>Frm_ABM_Usuario_Entrada.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Usuarios\Frm_Base_Usuario_Datos.cs">
+    <Compile Include="Formularios\Usuarios\Frm_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Usuarios\Frm_Base_Usuario_Datos.Designer.cs">
-      <DependentUpon>Frm_Base_Usuario_Datos.cs</DependentUpon>
+    <Compile Include="Formularios\Usuarios\Frm_Usuario.Designer.cs">
+      <DependentUpon>Frm_Usuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Usuarios\Frm_Usuario_Alta.cs">
       <SubType>Form</SubType>
@@ -159,17 +153,17 @@
     <Compile Include="Formularios\Usuarios\Frm_Usuario_Alta.Designer.cs">
       <DependentUpon>Frm_Usuario_Alta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Usuarios\Frm_Usuario_borrar.cs">
+    <Compile Include="Formularios\Usuarios\Frm_Usuario_Baja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Usuarios\Frm_Usuario_borrar.Designer.cs">
-      <DependentUpon>Frm_Usuario_borrar.cs</DependentUpon>
+    <Compile Include="Formularios\Usuarios\Frm_Usuario_Baja.Designer.cs">
+      <DependentUpon>Frm_Usuario_Baja.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Usuarios\Frm_Usuario_Modificaciones.cs">
+    <Compile Include="Formularios\Usuarios\Frm_Usuario_Modificacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Usuarios\Frm_Usuario_Modificaciones.Designer.cs">
-      <DependentUpon>Frm_Usuario_Modificaciones.cs</DependentUpon>
+    <Compile Include="Formularios\Usuarios\Frm_Usuario_Modificacion.Designer.cs">
+      <DependentUpon>Frm_Usuario_Modificacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocios\NE_Usuarios.cs" />
     <Compile Include="Program.cs" />
@@ -189,8 +183,8 @@
     <EmbeddedResource Include="Formularios\FrmBASE\FrmBase.resx">
       <DependentUpon>FrmBase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmBASE\FrmBase_AMB_Entrada.resx">
-      <DependentUpon>FrmBase_AMB_Entrada.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmBASE\FrmBase_ABM_Entrada.resx">
+      <DependentUpon>FrmBase_ABM_Entrada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\InicioSistema\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
@@ -201,23 +195,14 @@
     <EmbeddedResource Include="Formularios\InicioSistema\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Prioridades\Frm_ABM_Prioridades.resx">
-      <DependentUpon>Frm_ABM_Prioridades.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.resx">
       <DependentUpon>Frm_ABM_Usuario_Entrada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Usuarios\Frm_Base_Usuario_Datos.resx">
-      <DependentUpon>Frm_Base_Usuario_Datos.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Usuarios\Frm_Usuario.resx">
+      <DependentUpon>Frm_Usuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Usuarios\Frm_Usuario_Alta.resx">
       <DependentUpon>Frm_Usuario_Alta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Usuarios\Frm_Usuario_borrar.resx">
-      <DependentUpon>Frm_Usuario_borrar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Usuarios\Frm_Usuario_Modificaciones.resx">
-      <DependentUpon>Frm_Usuario_Modificaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

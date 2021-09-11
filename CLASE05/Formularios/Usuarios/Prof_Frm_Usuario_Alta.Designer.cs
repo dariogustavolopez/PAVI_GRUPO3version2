@@ -1,7 +1,6 @@
-﻿
-namespace CLASE05.Formularios.Usuarios
+﻿namespace CLASE05.Formularios.Usuarios
 {
-    partial class Frm_Usuario_Alta
+    partial class Prof_Frm_Usuario_Alta
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,6 +28,7 @@ namespace CLASE05.Formularios.Usuarios
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Prof_Frm_Usuario_Alta));
             this.SuspendLayout();
             // 
             // btn_aceptar
@@ -37,40 +37,40 @@ namespace CLASE05.Formularios.Usuarios
             // 
             // lbl_titulo
             // 
-            this.lbl_titulo.Location = new System.Drawing.Point(26, 25);
-            this.lbl_titulo.Size = new System.Drawing.Size(198, 31);
-            this.lbl_titulo.Text = "Altas de usuario";
+            this.lbl_titulo.Size = new System.Drawing.Size(204, 29);
+            this.lbl_titulo.Text = "Altas de Usuario";
             // 
-            // txt_password
+            // cmb_perfiles
             // 
-            this.txt_password.Location = new System.Drawing.Point(13, 226);
+            this.cmb_perfiles.DisplayMember = "nombre";
+            this.cmb_perfiles.ValueMember = "id_perfil";
             // 
-            // txt_n_usuario
+            // cmb_estadosUsuarios
             // 
-            this.txt_n_usuario.Location = new System.Drawing.Point(13, 174);
-            // 
-            // txt_id_usuario
-            // 
-            this.txt_id_usuario.Location = new System.Drawing.Point(13, 123);
+            this.cmb_estadosUsuarios.DisplayMember = "n_estado_usuario";
+            this.cmb_estadosUsuarios.ValueMember = "id_estado_usuario";
             // 
             // btn_cerrar
             // 
-            this.btn_cerrar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_cerrar.FlatAppearance.BorderSize = 0;
             // 
             // btn_minimizar
             // 
-            this.btn_minimizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_minimizar.FlatAppearance.BorderSize = 0;
             // 
             // btn_maximizar
             // 
-            this.btn_maximizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btn_maximizar.FlatAppearance.BorderSize = 0;
             // 
             // Frm_Usuario_Alta
             // 
             this._PosiciónVisible = true;
+            this._Titulo = "Altas de Usuario";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(432, 384);
+            this.ClientSize = new System.Drawing.Size(420, 415);
+            this.Location = new System.Drawing.Point(512, 161);
             this.Name = "Frm_Usuario_Alta";
+            this.Activated += new System.EventHandler(this.Frm_Usuario_Alta_Activated);
             this.Load += new System.EventHandler(this.Frm_Usuario_Alta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

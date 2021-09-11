@@ -57,6 +57,7 @@
             this.TxtDato.Name = "TxtDato";
             this.TxtDato.Size = new System.Drawing.Size(73, 25);
             this.TxtDato.TabIndex = 1;
+            this.TxtDato.Click += new System.EventHandler(this.TxtDato_Click);
             // 
             // LabelText01
             // 

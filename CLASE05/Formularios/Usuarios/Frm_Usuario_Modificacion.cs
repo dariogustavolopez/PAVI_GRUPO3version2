@@ -10,24 +10,20 @@ using CLASE05.Negocios;
 
 namespace CLASE05.Formularios.Usuarios
 {
-    public partial class Frm_Usuario_Alta : CLASE05.Formularios.Usuarios.Frm_Usuario
+    public partial class Frm_Usuario_Modificacion : CLASE05.Formularios.Usuarios.Frm_Usuario
     {
-        public Frm_Usuario_Alta()
+        public Frm_Usuario_Modificacion()
         {
             InitializeComponent();
         }
+
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
-            //N1  validar los datos del formulario
-            //N1 la validacion de todo ok => realizo validación especifica
-            //----N2 -------si la validacion especifica da ok => grabo
-            //----N2 -------la validacion especifica da error => ir a corregir el error
-            //N1 si validacion da error => ir a corregir el error
             TratamientosEspeciales _TE = new TratamientosEspeciales();
 
             if (_TE.Validar(this.Controls) == TratamientosEspeciales.RespuestaValidacion.Correcta)
             {
-                // VALIDACION ESPECIFICA
+                //// VALIDACION ESPECIFICA
                 //if (_TE.ValidarEmail(txt_email._Text) == TratamientosEspeciales.RespuestaValidacion.Error)
                 //{
                 //    MessageBox.Show("El formato de correo es invalido");
@@ -37,25 +33,23 @@ namespace CLASE05.Formularios.Usuarios
 
                 // GRABAR NUEVO REGISTRO
                 NE_Usuarios usu = new NE_Usuarios();
-
-                
+                               
                 usu.n_usuario = txt_n_usuario._Text;
                 usu.passsword = txt_password._Text;
-                
-                usu.Insertar();
-                MessageBox.Show("Se Grabó correctamente", "Importante");
             }
         }
-        private void Frm_Usuario_Alta_Activated(object sender, EventArgs e)
-        {
-            this.txt_n_usuario.Focus();
-        }
 
-        private void Frm_Usuario_Alta_Load(object sender, EventArgs e)
+        private void Frm_Usuario_Modificaciones_Load(object sender, EventArgs e)
         {
-            //maskedTextBox1.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
+            NE_Usuarios usu = new NE_Usuarios();
+            CargarFormulario(usu.RecuperarUsuario(id_usuario));
+        }
+        private void CargarFormulario(DataTable tabla)
+        {
+            txt_id_usuario._Text = tabla.Rows[0]["id_usuario"].ToString();
+            txt_n_usuario._Text = tabla.Rows[0]["n_usuario"].ToString();
+            txt_password._Text = tabla.Rows[0]["password"].ToString();
+        
         }
     }
 }
-
-

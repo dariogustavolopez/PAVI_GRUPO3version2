@@ -125,5 +125,10 @@ namespace CLASE05.Clases
                 }
             }
         }
+
+        private void TxtDato_Click(object sender, EventArgs e)
+        {
+            TxtDato.SelectionStart = 0;
+        }
     }
 }

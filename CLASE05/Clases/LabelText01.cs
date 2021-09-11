@@ -43,5 +43,10 @@ namespace CLASE05.Clases
         {
             InitializeComponent();
         }
+
+        private void TxtDato_Click(object sender, EventArgs e)
+        {
+            TxtDato.SelectionStart = 0;
+        }
     }
 }
