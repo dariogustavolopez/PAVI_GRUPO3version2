@@ -29,7 +29,7 @@ namespace CLASE05.Formularios.Usuarios
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label4 = new System.Windows.Forms.Label();
             this.rb_id_usuario = new System.Windows.Forms.RadioButton();
             this.btn_blan_patron = new System.Windows.Forms.Button();
@@ -92,6 +92,14 @@ namespace CLASE05.Formularios.Usuarios
             // 
             this.label1.Size = new System.Drawing.Size(164, 31);
             this.label1.Text = "ABM Usuario";
+            // 
+            // btn_consultar
+            // 
+            this.btn_consultar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_consultar.FlatAppearance.BorderSize = 0;
+            this.btn_consultar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_consultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click);
             // 
             // btn_cerrar
             // 
@@ -163,6 +171,7 @@ namespace CLASE05.Formularios.Usuarios
             // txt_id_usuario
             // 
             this.txt_id_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.txt_id_usuario.Enabled = false;
             this.txt_id_usuario.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id_usuario.ForeColor = System.Drawing.SystemColors.MenuBar;
             this.txt_id_usuario.Location = new System.Drawing.Point(152, 73);
@@ -185,6 +194,7 @@ namespace CLASE05.Formularios.Usuarios
             // txt_patron
             // 
             this.txt_patron.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.txt_patron.Enabled = false;
             this.txt_patron.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_patron.ForeColor = System.Drawing.Color.Gainsboro;
             this.txt_patron.Location = new System.Drawing.Point(152, 35);
@@ -200,8 +210,8 @@ namespace CLASE05.Formularios.Usuarios
             this.grid_usuarios._tamannoLetraHeader = 9;
             this.grid_usuarios.AllowUserToAddRows = false;
             this.grid_usuarios.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grid_usuarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grid_usuarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.grid_usuarios.BackgroundColor = System.Drawing.Color.Silver;
             this.grid_usuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_usuarios.Location = new System.Drawing.Point(12, 204);
@@ -212,6 +222,7 @@ namespace CLASE05.Formularios.Usuarios
             // 
             // Frm_ABM_Usuario_Entrada
             // 
+            this._PosiciónVisible = true;
             this._titulo = "ABM Usuario";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(669, 439);
@@ -219,6 +230,7 @@ namespace CLASE05.Formularios.Usuarios
             this.Location = new System.Drawing.Point(32, 58);
             this.Name = "Frm_ABM_Usuario_Entrada";
             this.Load += new System.EventHandler(this.Frm_ABM_Usuario_Load);
+            this.Controls.SetChildIndex(this.btn_consultar, 0);
             this.Controls.SetChildIndex(this.lbl_posicion, 0);
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);

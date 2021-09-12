@@ -94,6 +94,7 @@ namespace CLASE05.Clases
                             this.Text = " " + this.Text;
                         }
                     }
+
                     this.SelectionStart = this.Text.Length;
                 }
             }

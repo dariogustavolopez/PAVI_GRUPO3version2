@@ -51,7 +51,7 @@
             this.TxtDato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.TxtDato.Culture = new System.Globalization.CultureInfo("en-US");
             this.TxtDato.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F);
-            this.TxtDato.ForeColor = System.Drawing.Color.Silver;
+            this.TxtDato.ForeColor = System.Drawing.Color.Gainsboro;
             this.TxtDato.Location = new System.Drawing.Point(151, 3);
             this.TxtDato.Name = "TxtDato";
             this.TxtDato.Size = new System.Drawing.Size(73, 25);
@@ -71,6 +71,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LabelText02";
             this.Size = new System.Drawing.Size(228, 30);
+            this.EnabledChanged += new System.EventHandler(this.LabelText02_EnabledChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 

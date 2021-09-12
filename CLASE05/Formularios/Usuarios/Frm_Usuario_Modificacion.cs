@@ -15,6 +15,19 @@ namespace CLASE05.Formularios.Usuarios
         public Frm_Usuario_Modificacion()
         {
             InitializeComponent();
+        }              
+
+        private void Frm_Usuario_Modificaciones_Load(object sender, EventArgs e)
+        {
+            NE_Usuarios usu = new NE_Usuarios();
+            CargarFormulario(usu.RecuperarUsuario(id_usuario));
+        }
+        private void CargarFormulario(DataTable tabla)
+        {
+            txt_id_usuario._Text = tabla.Rows[0]["id_usuario"].ToString();
+            txt_n_usuario._Text = tabla.Rows[0]["n_usuario"].ToString();
+            txt_password._Text = tabla.Rows[0]["password"].ToString();
+        
         }
 
         private void btn_aceptar_Click(object sender, EventArgs e)
@@ -33,23 +46,15 @@ namespace CLASE05.Formularios.Usuarios
 
                 // GRABAR NUEVO REGISTRO
                 NE_Usuarios usu = new NE_Usuarios();
-                               
-                usu.n_usuario = txt_n_usuario._Text;
-                usu.passsword = txt_password._Text;
-            }
-        }
 
-        private void Frm_Usuario_Modificaciones_Load(object sender, EventArgs e)
-        {
-            NE_Usuarios usu = new NE_Usuarios();
-            CargarFormulario(usu.RecuperarUsuario(id_usuario));
-        }
-        private void CargarFormulario(DataTable tabla)
-        {
-            txt_id_usuario._Text = tabla.Rows[0]["id_usuario"].ToString();
-            txt_n_usuario._Text = tabla.Rows[0]["n_usuario"].ToString();
-            txt_password._Text = tabla.Rows[0]["password"].ToString();
-        
+                usu.id_usuario = txt_id_usuario._Text;
+                usu.n_usuario = txt_n_usuario._Text;
+                usu.password = txt_password._Text;
+
+                usu.Modificar();
+                MessageBox.Show("Se modificó correctamente el usuario " + txt_n_usuario._Text, "Importante");
+
+            }
         }
     }
 }

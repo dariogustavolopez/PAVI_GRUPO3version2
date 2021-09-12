@@ -1,7 +1,7 @@
 ﻿
 namespace CLASE05.Formularios.Usuarios
 {
-    partial class Frm_Usuario_Baja
+    partial class Frm_Usuario_Consulta
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -38,8 +38,8 @@ namespace CLASE05.Formularios.Usuarios
             // 
             // lbl_titulo
             // 
-            this.lbl_titulo.Size = new System.Drawing.Size(203, 31);
-            this.lbl_titulo.Text = "Bajas de Usuario";
+            this.lbl_titulo.Size = new System.Drawing.Size(218, 31);
+            this.lbl_titulo.Text = "Datos del Usuario";
             // 
             // txt_password
             // 
@@ -48,6 +48,10 @@ namespace CLASE05.Formularios.Usuarios
             // txt_n_usuario
             // 
             this.txt_n_usuario.Enabled = false;
+            // 
+            // txt_id_usuario
+            // 
+            this.txt_id_usuario.Enabled = false;
             // 
             // btn_cerrar
             // 
@@ -61,13 +65,13 @@ namespace CLASE05.Formularios.Usuarios
             // 
             this.btn_maximizar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             // 
-            // Frm_Usuario_Baja
+            // Frm_Usuario_Consulta
             // 
-            this._Titulo = "Bajas de Usuario";
+            this._Titulo = "Datos del Usuario";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(432, 384);
-            this.Name = "Frm_Usuario_Baja";
-            this.Load += new System.EventHandler(this.Frm_Usuario_Baja_Load);
+            this.Name = "Frm_Usuario_Consulta";
+            this.Load += new System.EventHandler(this.Frm_Usuario_Consulta_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

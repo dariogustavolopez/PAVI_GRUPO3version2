@@ -25,8 +25,8 @@ namespace CLASE05.Formularios.Usuarios
         {
             this.txt_patron.Text = string.Empty;
             this.txt_id_usuario.Text = string.Empty;
-            txt_id_usuario.Enabled = true;
-            txt_patron.Enabled = true;
+            txt_id_usuario.Enabled = false;
+            txt_patron.Enabled = false;
            // btn_buscar.Enabled = true;
         }
 
@@ -81,12 +81,51 @@ namespace CLASE05.Formularios.Usuarios
             frm_modificar.id_usuario = grid_usuarios.CurrentRow.Cells[0].Value.ToString();
             frm_modificar.ShowDialog();
         }
+        private void btn_borrar_Click(object sender, EventArgs e)
+        {
+            if (grid_usuarios.Rows.Count == 0)
+            {
+                MessageBox.Show("Falta buscar usuarios", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+            if (grid_usuarios.CurrentCell.RowIndex == -1)
+            {
+                MessageBox.Show("Falta seleccionar un usuario", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+
+            Frm_Usuario_Baja frm_baja = new Frm_Usuario_Baja();
+            frm_baja.id_usuario = grid_usuarios.CurrentRow.Cells[0].Value.ToString();
+            frm_baja.ShowDialog();
+
+            grid_usuarios.Rows.Clear();
+        }
+
+        private void btn_consultar_Click(object sender, EventArgs e)
+        {
+            if (grid_usuarios.Rows.Count == 0)
+            {
+                MessageBox.Show("Falta buscar usuarios", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+            if (grid_usuarios.CurrentCell.RowIndex == -1)
+            {
+                MessageBox.Show("Falta seleccionar un usuario", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+
+            Frm_Usuario_Consulta frm_consulta = new Frm_Usuario_Consulta();
+            frm_consulta.id_usuario = grid_usuarios.CurrentRow.Cells[0].Value.ToString();
+            frm_consulta.ShowDialog();
+
+        }
 
         private void rb_n_usuario_CheckedChanged(object sender, EventArgs e)
         {
             if (rb_n_usuario.Checked == true)
             {
                 txt_id_usuario.Enabled = false;
+                txt_id_usuario.Clear();
                 txt_patron.Enabled = true;
             }
         }
@@ -97,23 +136,20 @@ namespace CLASE05.Formularios.Usuarios
             {
                 txt_id_usuario.Enabled = true;
                 txt_patron.Enabled = false;
+                txt_patron.Clear();
             }
         }
-
-        private void btn_borrar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_patron_Click(object sender, EventArgs e)
         {
-            txt_patron.SelectionStart = 0;
+            txt_patron.SelectionStart = txt_patron.Text.Length;
         }
 
         private void txt_id_usuario_Click(object sender, EventArgs e)
         {
-            txt_id_usuario.SelectionStart = 0;
+            txt_id_usuario.SelectionStart = txt_id_usuario.Text.Length;
         }
+
+        
     }
 }
 

@@ -29,6 +29,7 @@ namespace CLASE05.Formularios.Usuarios
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_aceptar
@@ -37,21 +38,12 @@ namespace CLASE05.Formularios.Usuarios
             // 
             // lbl_titulo
             // 
-            this.lbl_titulo.Location = new System.Drawing.Point(26, 25);
             this.lbl_titulo.Size = new System.Drawing.Size(198, 31);
             this.lbl_titulo.Text = "Altas de usuario";
             // 
-            // txt_password
+            // panel1
             // 
-            this.txt_password.Location = new System.Drawing.Point(13, 226);
-            // 
-            // txt_n_usuario
-            // 
-            this.txt_n_usuario.Location = new System.Drawing.Point(13, 174);
-            // 
-            // txt_id_usuario
-            // 
-            this.txt_id_usuario.Location = new System.Drawing.Point(13, 123);
+            this.panel1.Location = new System.Drawing.Point(12, 85);
             // 
             // btn_cerrar
             // 
@@ -67,11 +59,12 @@ namespace CLASE05.Formularios.Usuarios
             // 
             // Frm_Usuario_Alta
             // 
-            this._PosiciónVisible = true;
+            this._Titulo = "Altas de usuario";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(432, 384);
             this.Name = "Frm_Usuario_Alta";
             this.Load += new System.EventHandler(this.Frm_Usuario_Alta_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

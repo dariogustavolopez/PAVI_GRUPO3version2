@@ -39,12 +39,28 @@ namespace CLASE05.Clases
             Cerrar();
             return tabla;
         }
-        public void Insertar(string sql)
+
+        public void EjecutarNoSelect(string sql)
         {
             Conectar();
             Cmd.CommandText = sql;
             Cmd.ExecuteNonQuery();
             Cerrar();
+        }
+
+        public void Insertar(string sql)
+        {
+            EjecutarNoSelect(sql);
+        }
+
+        public void Borrar(string sql)
+        {
+            EjecutarNoSelect(sql);
+        }
+
+        public void Modificar(string sql)
+        {
+            EjecutarNoSelect(sql);
         }
     }
 }

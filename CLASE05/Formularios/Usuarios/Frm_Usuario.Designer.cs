@@ -34,6 +34,8 @@ namespace CLASE05.Formularios.Usuarios
             this.txt_password = new CLASE05.Clases.LabelText02();
             this.txt_n_usuario = new CLASE05.Clases.LabelText02();
             this.txt_id_usuario = new CLASE05.Clases.LabelText02();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_cerrar
@@ -56,7 +58,7 @@ namespace CLASE05.Formularios.Usuarios
             this.btn_aceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.btn_aceptar.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold);
             this.btn_aceptar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_aceptar.Location = new System.Drawing.Point(163, 341);
+            this.btn_aceptar.Location = new System.Drawing.Point(156, 238);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(95, 31);
             this.btn_aceptar.TabIndex = 22;
@@ -67,8 +69,8 @@ namespace CLASE05.Formularios.Usuarios
             // 
             this.lbl_titulo.AutoSize = true;
             this.lbl_titulo.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Bold);
-            this.lbl_titulo.ForeColor = System.Drawing.Color.Silver;
-            this.lbl_titulo.Location = new System.Drawing.Point(56, 21);
+            this.lbl_titulo.ForeColor = System.Drawing.Color.White;
+            this.lbl_titulo.Location = new System.Drawing.Point(12, 42);
             this.lbl_titulo.Name = "lbl_titulo";
             this.lbl_titulo.Size = new System.Drawing.Size(81, 31);
             this.lbl_titulo.TabIndex = 25;
@@ -91,7 +93,7 @@ namespace CLASE05.Formularios.Usuarios
             this.txt_password.BackColor = System.Drawing.Color.Transparent;
             this.txt_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_password.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_password.Location = new System.Drawing.Point(7, 225);
+            this.txt_password.Location = new System.Drawing.Point(0, 147);
             this.txt_password.Margin = new System.Windows.Forms.Padding(4);
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(353, 53);
@@ -114,7 +116,7 @@ namespace CLASE05.Formularios.Usuarios
             this.txt_n_usuario.BackColor = System.Drawing.Color.Transparent;
             this.txt_n_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_n_usuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_n_usuario.Location = new System.Drawing.Point(7, 173);
+            this.txt_n_usuario.Location = new System.Drawing.Point(0, 95);
             this.txt_n_usuario.Margin = new System.Windows.Forms.Padding(4);
             this.txt_n_usuario.Name = "txt_n_usuario";
             this.txt_n_usuario.Size = new System.Drawing.Size(353, 53);
@@ -138,33 +140,43 @@ namespace CLASE05.Formularios.Usuarios
             this.txt_id_usuario.Enabled = false;
             this.txt_id_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id_usuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_id_usuario.Location = new System.Drawing.Point(7, 122);
+            this.txt_id_usuario.Location = new System.Drawing.Point(0, 44);
             this.txt_id_usuario.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id_usuario.Name = "txt_id_usuario";
             this.txt_id_usuario.Size = new System.Drawing.Size(197, 28);
             this.txt_id_usuario.TabIndex = 13;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txt_password);
+            this.panel1.Controls.Add(this.txt_id_usuario);
+            this.panel1.Controls.Add(this.txt_n_usuario);
+            this.panel1.Controls.Add(this.btn_aceptar);
+            this.panel1.Location = new System.Drawing.Point(10, 84);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(410, 288);
+            this.panel1.TabIndex = 26;
+            // 
             // Frm_Usuario
             // 
             this._FormularioMovil = true;
+            this._PosiciónVisible = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(432, 384);
-            this.Controls.Add(this.btn_aceptar);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_titulo);
-            this.Controls.Add(this.txt_password);
-            this.Controls.Add(this.txt_n_usuario);
-            this.Controls.Add(this.txt_id_usuario);
-            this.Location = new System.Drawing.Point(310, 126);
+            this.Location = new System.Drawing.Point(310, 100);
             this.Name = "Frm_Usuario";
-            this.Controls.SetChildIndex(this.txt_id_usuario, 0);
-            this.Controls.SetChildIndex(this.txt_n_usuario, 0);
-            this.Controls.SetChildIndex(this.txt_password, 0);
             this.Controls.SetChildIndex(this.lbl_titulo, 0);
-            this.Controls.SetChildIndex(this.btn_aceptar, 0);
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);
             this.Controls.SetChildIndex(this.btn_minimizar, 0);
             this.Controls.SetChildIndex(this.lbl_posicion, 0);
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,5 +189,6 @@ namespace CLASE05.Formularios.Usuarios
         public Clases.LabelText02 txt_password;
         public Clases.LabelText02 txt_n_usuario;
         public Clases.LabelText02 txt_id_usuario;
+        public System.Windows.Forms.Panel panel1;
     }
 }

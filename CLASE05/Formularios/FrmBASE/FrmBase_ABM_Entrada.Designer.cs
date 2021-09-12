@@ -36,6 +36,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btn_modificar = new System.Windows.Forms.Button();
             this.btn_borrar = new System.Windows.Forms.Button();
+            this.btn_consultar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,7 +102,7 @@
             this.btn_alta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_alta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_alta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_alta.Location = new System.Drawing.Point(487, 391);
+            this.btn_alta.Location = new System.Drawing.Point(487, 390);
             this.btn_alta.Name = "btn_alta";
             this.btn_alta.Size = new System.Drawing.Size(45, 45);
             this.btn_alta.TabIndex = 4;
@@ -118,7 +119,7 @@
             this.btn_modificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_modificar.Location = new System.Drawing.Point(548, 391);
+            this.btn_modificar.Location = new System.Drawing.Point(548, 390);
             this.btn_modificar.Name = "btn_modificar";
             this.btn_modificar.Size = new System.Drawing.Size(45, 45);
             this.btn_modificar.TabIndex = 4;
@@ -135,12 +136,29 @@
             this.btn_borrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_borrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_borrar.Location = new System.Drawing.Point(605, 388);
+            this.btn_borrar.Location = new System.Drawing.Point(605, 387);
             this.btn_borrar.Name = "btn_borrar";
             this.btn_borrar.Size = new System.Drawing.Size(50, 50);
             this.btn_borrar.TabIndex = 4;
             this.toolTip1.SetToolTip(this.btn_borrar, "Eliminar registro");
             this.btn_borrar.UseVisualStyleBackColor = false;
+            // 
+            // btn_consultar
+            // 
+            this.btn_consultar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_consultar.BackgroundImage = global::CLASE05.Properties.Resources.btn_consultar__3_;
+            this.btn_consultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_consultar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_consultar.FlatAppearance.BorderSize = 0;
+            this.btn_consultar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_consultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_consultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_consultar.Location = new System.Drawing.Point(425, 389);
+            this.btn_consultar.Name = "btn_consultar";
+            this.btn_consultar.Size = new System.Drawing.Size(47, 47);
+            this.btn_consultar.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.btn_consultar, "Consultar registro\r\n");
+            this.btn_consultar.UseVisualStyleBackColor = false;
             // 
             // FrmBase_ABM_Entrada
             // 
@@ -149,6 +167,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(669, 439);
+            this.Controls.Add(this.btn_consultar);
             this.Controls.Add(this.btn_borrar);
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.btn_alta);
@@ -157,15 +176,16 @@
             this.Location = new System.Drawing.Point(200, 90);
             this.Name = "FrmBase_ABM_Entrada";
             this.toolTip1.SetToolTip(this, "Permite ingresar al formulario de Altas de registros\r\n");
-            this.Controls.SetChildIndex(this.lbl_posicion, 0);
-            this.Controls.SetChildIndex(this.btn_cerrar, 0);
-            this.Controls.SetChildIndex(this.btn_maximizar, 0);
-            this.Controls.SetChildIndex(this.btn_minimizar, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.btn_alta, 0);
             this.Controls.SetChildIndex(this.btn_modificar, 0);
             this.Controls.SetChildIndex(this.btn_borrar, 0);
+            this.Controls.SetChildIndex(this.btn_consultar, 0);
+            this.Controls.SetChildIndex(this.lbl_posicion, 0);
+            this.Controls.SetChildIndex(this.btn_cerrar, 0);
+            this.Controls.SetChildIndex(this.btn_maximizar, 0);
+            this.Controls.SetChildIndex(this.btn_minimizar, 0);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -180,5 +200,6 @@
         public System.Windows.Forms.Button btn_modificar;
         public System.Windows.Forms.Button btn_borrar;
         public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Button btn_consultar;
     }
 }

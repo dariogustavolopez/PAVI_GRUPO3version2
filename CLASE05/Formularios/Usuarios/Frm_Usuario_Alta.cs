@@ -40,10 +40,11 @@ namespace CLASE05.Formularios.Usuarios
 
                 
                 usu.n_usuario = txt_n_usuario._Text;
-                usu.passsword = txt_password._Text;
+                usu.password = txt_password._Text;
                 
                 usu.Insertar();
-                MessageBox.Show("Se Grabó correctamente", "Importante");
+                MessageBox.Show("Se grabó correctamente", "Importante");
+                this.Dispose();
             }
         }
         private void Frm_Usuario_Alta_Activated(object sender, EventArgs e)

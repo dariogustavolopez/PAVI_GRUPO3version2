@@ -16,7 +16,7 @@ namespace CLASE05.Negocios
 
         public string id_usuario { get; set; }
         public string n_usuario    {get; set; }
-        public string passsword   {get; set; }
+        public string password   {get; set; }
              
         BE_Acceso_Datos _BD = new BE_Acceso_Datos();
 
@@ -79,10 +79,27 @@ namespace CLASE05.Negocios
 
             sqlInsert = @"INSERT INTO usuario (n_usuario, password) VALUES (";
             sqlInsert += "'" + n_usuario + "'";
-            sqlInsert += ", '" + passsword + "')";
+            sqlInsert += ", '" + password + "')";
 
             //MessageBox.Show(sqlInsert);
             _BD.Insertar(sqlInsert);
+        }
+        public void Modificar()
+        {
+            string sqlUpdate = "";
+
+            sqlUpdate = "UPDATE usuario SET ";
+            sqlUpdate += "n_usuario = '" + n_usuario + "'";
+            sqlUpdate += ", password = '" + password + "'";
+            sqlUpdate += " WHERE id_usuario = " + id_usuario;
+
+            _BD.Modificar(sqlUpdate);
+        }
+        public void Borrar()
+        {
+            string sqlDelete = "DELETE FROM usuario WHERE id_usuario = " + id_usuario;
+
+            _BD.Borrar(sqlDelete);
         }
 
     }

@@ -70,6 +70,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LabelText01";
             this.Size = new System.Drawing.Size(228, 28);
+            this.EnabledChanged += new System.EventHandler(this.LabelText01_EnabledChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
