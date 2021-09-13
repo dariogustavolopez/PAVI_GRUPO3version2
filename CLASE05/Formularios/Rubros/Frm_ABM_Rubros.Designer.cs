@@ -29,7 +29,7 @@ namespace CLASE05.Formularios.Rubros
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grid_TipoFactura = new CLASE05.Clases.Grid01();
             this.chk_Id = new System.Windows.Forms.CheckBox();
             this.chk_Todos = new System.Windows.Forms.CheckBox();
@@ -89,6 +89,7 @@ namespace CLASE05.Formularios.Rubros
             this.btn_consultar.FlatAppearance.BorderSize = 0;
             this.btn_consultar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_consultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.btn_consultar.Click += new System.EventHandler(this.btn_consultar_Click);
             // 
             // btn_cerrar
             // 
@@ -108,8 +109,8 @@ namespace CLASE05.Formularios.Rubros
             this.grid_TipoFactura._tamannoLetraHeader = 9;
             this.grid_TipoFactura.AllowUserToAddRows = false;
             this.grid_TipoFactura.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grid_TipoFactura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grid_TipoFactura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.grid_TipoFactura.BackgroundColor = System.Drawing.Color.Silver;
             this.grid_TipoFactura.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.grid_TipoFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

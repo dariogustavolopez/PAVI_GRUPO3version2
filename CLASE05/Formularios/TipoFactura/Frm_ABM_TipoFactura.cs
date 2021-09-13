@@ -39,5 +39,11 @@ namespace CLASE05.Formularios.TipoFactura
             Frm_Baja_TipoFactura frm_baja = new Frm_Baja_TipoFactura();
             frm_baja.ShowDialog();
         }
+
+        private void btn_consultar_Click(object sender, EventArgs e)
+        {
+            Frm_Consulta_TipoFactura frm_consulta = new Frm_Consulta_TipoFactura();
+            frm_consulta.ShowDialog();
+        }
     }
 }

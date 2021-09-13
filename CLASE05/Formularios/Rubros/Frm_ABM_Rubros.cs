@@ -39,5 +39,11 @@ namespace CLASE05.Formularios.Rubros
             Frm_Baja_Rubro frm_baja = new Frm_Baja_Rubro();
             frm_baja.ShowDialog();
         }
+
+        private void btn_consultar_Click(object sender, EventArgs e)
+        {
+            Frm_Consulta_Rubro frm_consulta = new Frm_Consulta_Rubro();
+            frm_consulta.ShowDialog();
+        }
     }
 }
