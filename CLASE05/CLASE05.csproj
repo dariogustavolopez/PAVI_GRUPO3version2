@@ -135,6 +135,54 @@
     <Compile Include="Formularios\InicioSistema\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Rubros\Frm_ABM_Rubros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Rubros\Frm_ABM_Rubros.Designer.cs">
+      <DependentUpon>Frm_ABM_Rubros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Rubros\Frm_Alta_Rubro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Rubros\Frm_Alta_Rubro.Designer.cs">
+      <DependentUpon>Frm_Alta_Rubro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Rubros\Frm_Baja_Rubro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Rubros\Frm_Baja_Rubro.Designer.cs">
+      <DependentUpon>Frm_Baja_Rubro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Rubros\Frm_Modificacion_Rubro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Rubros\Frm_Modificacion_Rubro.Designer.cs">
+      <DependentUpon>Frm_Modificacion_Rubro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\TipoFactura\Frm_ABM_TipoFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\TipoFactura\Frm_ABM_TipoFactura.Designer.cs">
+      <DependentUpon>Frm_ABM_TipoFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\TipoFactura\Frm_Alta_TipoFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\TipoFactura\Frm_Alta_TipoFactura.Designer.cs">
+      <DependentUpon>Frm_Alta_TipoFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\TipoFactura\Frm_Baja_TipoFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\TipoFactura\Frm_Baja_TipoFactura.Designer.cs">
+      <DependentUpon>Frm_Baja_TipoFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\TipoFactura\Frm_Modificacion_TipoFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\TipoFactura\Frm_Modificacion_TipoFactura.Designer.cs">
+      <DependentUpon>Frm_Modificacion_TipoFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +248,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\InicioSistema\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Rubros\Frm_ABM_Rubros.resx">
+      <DependentUpon>Frm_ABM_Rubros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Rubros\Frm_Alta_Rubro.resx">
+      <DependentUpon>Frm_Alta_Rubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Rubros\Frm_Baja_Rubro.resx">
+      <DependentUpon>Frm_Baja_Rubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Rubros\Frm_Modificacion_Rubro.resx">
+      <DependentUpon>Frm_Modificacion_Rubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\TipoFactura\Frm_ABM_TipoFactura.resx">
+      <DependentUpon>Frm_ABM_TipoFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\TipoFactura\Frm_Alta_TipoFactura.resx">
+      <DependentUpon>Frm_Alta_TipoFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\TipoFactura\Frm_Baja_TipoFactura.resx">
+      <DependentUpon>Frm_Baja_TipoFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\TipoFactura\Frm_Modificacion_TipoFactura.resx">
+      <DependentUpon>Frm_Modificacion_TipoFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Usuarios\Frm_ABM_Usuario_Entrada.resx">
       <DependentUpon>Frm_ABM_Usuario_Entrada.cs</DependentUpon>
@@ -288,5 +360,27 @@
   <ItemGroup>
     <None Include="Resources\btn_consultar %283%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modifica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Limpiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

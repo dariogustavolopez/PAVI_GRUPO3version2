@@ -22,10 +22,9 @@ namespace CLASE05
             //Application.Run(new Frm_Escritorio());
             //Application.Run(new Frm_Login());
             //Application.Run(new FrmLogin());
-            Application.Run(new Frm_ABM_Usuario_Entrada());
+            //Application.Run(new Frm_ABM_Usuario_Entrada());
             //Application.Run(new Frm_Usuario_Alta());
             //Application.Run(new Frm_Log());
-
 
         }
     }
