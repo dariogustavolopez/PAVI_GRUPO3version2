@@ -383,6 +383,16 @@ namespace CLASE05.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FondoM {
+            get {
+                object obj = ResourceManager.GetObject("FondoM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
@@ -446,6 +456,16 @@ namespace CLASE05.Properties {
         internal static System.Drawing.Bitmap maximizar_g {
             get {
                 object obj = ResourceManager.GetObject("maximizar_g", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAYORTIC {
+            get {
+                object obj = ResourceManager.GetObject("MAYORTIC", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

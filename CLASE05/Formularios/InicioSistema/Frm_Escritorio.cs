@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using CLASE05.Negocios;
 using CLASE05.Formularios.Usuarios;
 using CLASE05.Formularios.FrmBASE;
+using CLASE05.Formularios.TipoFactura;
+using CLASE05.Formularios.Rubros;
+
 
 namespace CLASE05.Formularios.InicioSistema
 {
@@ -65,6 +68,18 @@ namespace CLASE05.Formularios.InicioSistema
         {
             Frm_ABM_Usuario_Entrada frm_usuario = new Frm_ABM_Usuario_Entrada();
             frm_usuario.ShowDialog();
+        }
+
+        private void tipoFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_TipoFactura frm_Factura = new Frm_ABM_TipoFactura();
+            frm_Factura.ShowDialog();
+        }
+
+        private void rubrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ABM_Rubros frm_Rubro = new Frm_ABM_Rubros();
+            frm_Rubro.ShowDialog();
         }
     }
 }

@@ -30,7 +30,7 @@ namespace CLASE05.Formularios.Rubros
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grid_Rubros = new CLASE05.Clases.Grid01();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_blan_patron = new System.Windows.Forms.Button();
@@ -76,6 +76,7 @@ namespace CLASE05.Formularios.Rubros
             this.btn_alta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_alta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.toolTip1.SetToolTip(this.btn_alta, "Permite Ingresar al Formulario de Altas de Rubros\r\n");
+            this.btn_alta.Click += new System.EventHandler(this.btn_alta_Click_1);
             // 
             // btn_modificar
             // 
@@ -84,6 +85,7 @@ namespace CLASE05.Formularios.Rubros
             this.btn_modificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.toolTip1.SetToolTip(this.btn_modificar, "Permite ingresar al Formulario de Modificación de Rubros");
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click_1);
             // 
             // btn_borrar
             // 
@@ -92,6 +94,7 @@ namespace CLASE05.Formularios.Rubros
             this.btn_borrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btn_borrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.toolTip1.SetToolTip(this.btn_borrar, "Permite ingresar al formulario de bajas de Rubros");
+            this.btn_borrar.Click += new System.EventHandler(this.btn_borrar_Click_1);
             // 
             // label1
             // 
@@ -125,8 +128,8 @@ namespace CLASE05.Formularios.Rubros
             this.grid_Rubros._tamannoLetraHeader = 9;
             this.grid_Rubros.AllowUserToAddRows = false;
             this.grid_Rubros.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grid_Rubros.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grid_Rubros.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.grid_Rubros.BackgroundColor = System.Drawing.Color.Silver;
             this.grid_Rubros.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.grid_Rubros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

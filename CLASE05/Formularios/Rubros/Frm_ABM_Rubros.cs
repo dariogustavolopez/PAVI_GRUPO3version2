@@ -27,24 +27,6 @@ namespace CLASE05.Formularios.Rubros
 
         }
 
-        private void btn_alta_Click(object sender, EventArgs e)
-        {
-            Frm_Alta_Rubro frm_alta = new Frm_Alta_Rubro();
-            frm_alta.ShowDialog();
-        }
-
-        private void btn_modificar_Click(object sender, EventArgs e)
-        {
-            Frm_Modificacion_Rubro frm_modificacion = new Frm_Modificacion_Rubro();
-            frm_modificacion.ShowDialog();
-        }
-
-        private void btn_borrar_Click(object sender, EventArgs e)
-        {
-            Frm_Baja_Rubro frm_baja = new Frm_Baja_Rubro();
-            frm_baja.ShowDialog();
-        }
-
         private void btn_consultar_Click(object sender, EventArgs e)
         {
             Frm_Consulta_Rubro frm_consulta = new Frm_Consulta_Rubro();
@@ -59,6 +41,22 @@ namespace CLASE05.Formularios.Rubros
             txt_patron.Enabled = false;
         }
 
+        private void btn_alta_Click_1(object sender, EventArgs e)
+        {
+            Frm_Alta_Rubro frm_alta = new Frm_Alta_Rubro();
+            frm_alta.ShowDialog();
+        }
 
+        private void btn_modificar_Click_1(object sender, EventArgs e)
+        {
+            Frm_Modificacion_Rubro frm_modificacion = new Frm_Modificacion_Rubro();
+            frm_modificacion.ShowDialog();
+        }
+
+        private void btn_borrar_Click_1(object sender, EventArgs e)
+        {
+            Frm_Baja_Rubro frm_baja = new Frm_Baja_Rubro();
+            frm_baja.ShowDialog();
+        }
     }
 }

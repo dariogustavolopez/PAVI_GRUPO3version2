@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CLASE05.Negocios;
 
 namespace CLASE05.Formularios.TipoFactura
 {
@@ -25,6 +26,30 @@ namespace CLASE05.Formularios.TipoFactura
         private void btn_buscar_Click(object sender, EventArgs e)
         {
 
+            NE_Usuarios usu = new NE_Usuarios();
+
+            string columna = "";
+
+            if (txt_patron.Text != string.Empty)
+            {
+                if (rb_n_TipoFactura.Checked == true)
+                    columna = rb_n_TipoFactura.Text;
+
+                grid_TipoFactura.Cargar(usu.BuscarUsuario(txt_patron.Text, columna));
+                if (grid_TipoFactura.Rows.Count == 0)
+                    MessageBox.Show("No se encontró ningún usuario", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (txt_id_TipoFactura.Text != string.Empty)
+            {
+                grid_TipoFactura.Cargar(usu.BuscarUsuario(txt_id_TipoFactura.Text));
+                if (grid_TipoFactura.Rows.Count == 0)
+                    MessageBox.Show("No se encontró ningún usuario", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            MessageBox.Show("No hay parámetros de búsqueda", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            // btn_buscar.Enabled = false;
         }
 
         private void btn_alta_Click(object sender, EventArgs e)
