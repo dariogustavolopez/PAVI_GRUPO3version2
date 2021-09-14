@@ -17,6 +17,11 @@ namespace CLASE05.Formularios.Rubros
             InitializeComponent();
         }
 
+        private void Frm_ABM_Rubros_Load(object sender, EventArgs e)
+        {
+            this.grid_Rubros.Formatear("ID Rubro, 100, C; Nombre Rubro, 200, I");
+        }
+
         private void btn_buscar_Click(object sender, EventArgs e)
         {
 
@@ -45,5 +50,15 @@ namespace CLASE05.Formularios.Rubros
             Frm_Consulta_Rubro frm_consulta = new Frm_Consulta_Rubro();
             frm_consulta.ShowDialog();
         }
+
+        private void btn_blan_patron_Click(object sender, EventArgs e)
+        {
+            this.txt_patron.Text = string.Empty;
+            this.txt_id_Rubro.Text = string.Empty;
+            txt_id_Rubro.Enabled = false;
+            txt_patron.Enabled = false;
+        }
+
+
     }
 }

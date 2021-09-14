@@ -17,6 +17,11 @@ namespace CLASE05.Formularios.TipoFactura
             InitializeComponent();
         }
 
+        private void Frm_ABM_TipoFactura_Load(object sender, EventArgs e)
+        {
+            this.grid_TipoFactura.Formatear("ID Tipo Factura, 100, C; Nombre Tipo Factura, 250, I");
+        }
+
         private void btn_buscar_Click(object sender, EventArgs e)
         {
 
@@ -45,5 +50,15 @@ namespace CLASE05.Formularios.TipoFactura
             Frm_Consulta_TipoFactura frm_consulta = new Frm_Consulta_TipoFactura();
             frm_consulta.ShowDialog();
         }
+
+        private void btn_blan_patron_Click(object sender, EventArgs e)
+        {
+            this.txt_patron.Text = string.Empty;
+            this.txt_id_TipoFactura.Text = string.Empty;
+            txt_id_TipoFactura.Enabled = false;
+            txt_patron.Enabled = false;
+        }
+
+        
     }
 }
