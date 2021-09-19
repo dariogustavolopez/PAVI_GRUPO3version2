@@ -229,6 +229,7 @@ namespace CLASE05.Formularios.Usuarios
             this.Controls.Add(this.grid_usuarios);
             this.Location = new System.Drawing.Point(32, 58);
             this.Name = "Frm_ABM_Usuario_Entrada";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Frm_ABM_Usuario_Load);
             this.Controls.SetChildIndex(this.btn_consultar, 0);
             this.Controls.SetChildIndex(this.lbl_posicion, 0);

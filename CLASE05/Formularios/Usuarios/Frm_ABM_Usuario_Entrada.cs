@@ -27,7 +27,9 @@ namespace CLASE05.Formularios.Usuarios
             this.txt_id_usuario.Text = string.Empty;
             txt_id_usuario.Enabled = false;
             txt_patron.Enabled = false;
-           // btn_buscar.Enabled = true;
+            // btn_buscar.Enabled = true;
+            grid_usuarios.Rows.Clear();
+
         }
 
         private void btn_buscar_Click(object sender, EventArgs e)

@@ -30,7 +30,7 @@ namespace CLASE05.Formularios.TipoFactura
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grid_TipoFactura = new CLASE05.Clases.Grid01();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_blan_patron = new System.Windows.Forms.Button();
@@ -133,8 +133,8 @@ namespace CLASE05.Formularios.TipoFactura
             this.grid_TipoFactura._tamannoLetraHeader = 9;
             this.grid_TipoFactura.AllowUserToAddRows = false;
             this.grid_TipoFactura.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grid_TipoFactura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grid_TipoFactura.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.grid_TipoFactura.BackgroundColor = System.Drawing.Color.Silver;
             this.grid_TipoFactura.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.grid_TipoFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -195,30 +195,33 @@ namespace CLASE05.Formularios.TipoFactura
             this.txt_patron.Name = "txt_patron";
             this.txt_patron.Size = new System.Drawing.Size(129, 25);
             this.txt_patron.TabIndex = 20;
+            this.txt_patron.Click += new System.EventHandler(this.txt_patron_Click);
             // 
             // rb_n_TipoFactura
             // 
             this.rb_n_TipoFactura.AutoSize = true;
             this.rb_n_TipoFactura.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_n_TipoFactura.Location = new System.Drawing.Point(357, 59);
+            this.rb_n_TipoFactura.Location = new System.Drawing.Point(357, 35);
             this.rb_n_TipoFactura.Name = "rb_n_TipoFactura";
             this.rb_n_TipoFactura.Size = new System.Drawing.Size(126, 21);
             this.rb_n_TipoFactura.TabIndex = 29;
             this.rb_n_TipoFactura.TabStop = true;
             this.rb_n_TipoFactura.Text = "Nombre Factura";
             this.rb_n_TipoFactura.UseVisualStyleBackColor = true;
+            this.rb_n_TipoFactura.CheckedChanged += new System.EventHandler(this.rb_n_TipoFactura_CheckedChanged);
             // 
             // rb_id_TipoFactura
             // 
             this.rb_id_TipoFactura.AutoSize = true;
             this.rb_id_TipoFactura.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_id_TipoFactura.Location = new System.Drawing.Point(357, 34);
+            this.rb_id_TipoFactura.Location = new System.Drawing.Point(357, 66);
             this.rb_id_TipoFactura.Name = "rb_id_TipoFactura";
             this.rb_id_TipoFactura.Size = new System.Drawing.Size(138, 21);
             this.rb_id_TipoFactura.TabIndex = 30;
             this.rb_id_TipoFactura.TabStop = true;
             this.rb_id_TipoFactura.Text = "ID Tipo de Factura";
             this.rb_id_TipoFactura.UseVisualStyleBackColor = true;
+            this.rb_id_TipoFactura.CheckedChanged += new System.EventHandler(this.rb_id_TipoFactura_CheckedChanged);
             // 
             // txt_id_TipoFactura
             // 
@@ -231,6 +234,7 @@ namespace CLASE05.Formularios.TipoFactura
             this.txt_id_TipoFactura.Name = "txt_id_TipoFactura";
             this.txt_id_TipoFactura.Size = new System.Drawing.Size(48, 25);
             this.txt_id_TipoFactura.TabIndex = 31;
+            this.txt_id_TipoFactura.Click += new System.EventHandler(this.txt_id_TipoFactura_Click);
             // 
             // label3
             // 
