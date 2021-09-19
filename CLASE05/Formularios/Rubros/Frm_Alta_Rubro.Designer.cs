@@ -31,7 +31,7 @@ namespace CLASE05.Formularios.Rubros
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_id_rubro = new CLASE05.Clases.LabelText02();
-            this.txt_n_Rubro = new CLASE05.Clases.LabelText02();
+            this.txt_n_rubro = new CLASE05.Clases.LabelText02();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -57,7 +57,7 @@ namespace CLASE05.Formularios.Rubros
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txt_id_rubro);
-            this.panel1.Controls.Add(this.txt_n_Rubro);
+            this.panel1.Controls.Add(this.txt_n_rubro);
             this.panel1.Controls.Add(this.btn_aceptar);
             this.panel1.Location = new System.Drawing.Point(10, 84);
             this.panel1.Name = "panel1";
@@ -88,28 +88,28 @@ namespace CLASE05.Formularios.Rubros
             this.txt_id_rubro.Size = new System.Drawing.Size(353, 28);
             this.txt_id_rubro.TabIndex = 13;
             // 
-            // txt_n_Rubro
+            // txt_n_rubro
             // 
-            this.txt_n_Rubro._Ancho = 30;
-            this.txt_n_Rubro._Decimales = 2;
-            this.txt_n_Rubro._Etiqueta = "Nombre de Rubro";
-            this.txt_n_Rubro._Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
-            this.txt_n_Rubro._MensajeError = "El nombre del rubro está vácio";
-            this.txt_n_Rubro._Nombre_campo = "n_rubro";
-            this.txt_n_Rubro._Nombre_tabla = null;
-            this.txt_n_Rubro._ReadOnly = false;
-            this.txt_n_Rubro._Text = "";
-            this.txt_n_Rubro._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_n_Rubro._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
-            this.txt_n_Rubro._Validable = true;
-            this.txt_n_Rubro.BackColor = System.Drawing.Color.Transparent;
-            this.txt_n_Rubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_n_Rubro.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_n_Rubro.Location = new System.Drawing.Point(0, 95);
-            this.txt_n_Rubro.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_n_Rubro.Name = "txt_n_Rubro";
-            this.txt_n_Rubro.Size = new System.Drawing.Size(353, 53);
-            this.txt_n_Rubro.TabIndex = 14;
+            this.txt_n_rubro._Ancho = 30;
+            this.txt_n_rubro._Decimales = 2;
+            this.txt_n_rubro._Etiqueta = "Nombre de Rubro";
+            this.txt_n_rubro._Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
+            this.txt_n_rubro._MensajeError = "El nombre del rubro está vácio";
+            this.txt_n_rubro._Nombre_campo = "n_rubro";
+            this.txt_n_rubro._Nombre_tabla = null;
+            this.txt_n_rubro._ReadOnly = false;
+            this.txt_n_rubro._Text = "";
+            this.txt_n_rubro._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txt_n_rubro._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
+            this.txt_n_rubro._Validable = true;
+            this.txt_n_rubro.BackColor = System.Drawing.Color.Transparent;
+            this.txt_n_rubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_n_rubro.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txt_n_rubro.Location = new System.Drawing.Point(0, 95);
+            this.txt_n_rubro.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_n_rubro.Name = "txt_n_rubro";
+            this.txt_n_rubro.Size = new System.Drawing.Size(353, 53);
+            this.txt_n_rubro.TabIndex = 14;
             // 
             // btn_aceptar
             // 
@@ -122,6 +122,7 @@ namespace CLASE05.Formularios.Rubros
             this.btn_aceptar.TabIndex = 22;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = false;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // lbl_titulo
             // 
@@ -145,6 +146,7 @@ namespace CLASE05.Formularios.Rubros
             this.Controls.Add(this.lbl_titulo);
             this.Name = "Frm_Alta_Rubro";
             this.Text = "Frm_Alta_Rubro";
+            this.Activated += new System.EventHandler(this.Frm_Alta_Rubro_Activated);
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);
             this.Controls.SetChildIndex(this.btn_minimizar, 0);
@@ -161,7 +163,7 @@ namespace CLASE05.Formularios.Rubros
 
         public System.Windows.Forms.Panel panel1;
         public Clases.LabelText02 txt_id_rubro;
-        public Clases.LabelText02 txt_n_Rubro;
+        public Clases.LabelText02 txt_n_rubro;
         public System.Windows.Forms.Button btn_aceptar;
         public System.Windows.Forms.Label lbl_titulo;
     }

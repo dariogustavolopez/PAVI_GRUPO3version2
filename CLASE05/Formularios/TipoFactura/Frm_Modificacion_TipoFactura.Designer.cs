@@ -30,10 +30,10 @@ namespace CLASE05.Formularios.TipoFactura
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_n_TipoFactura_viejo = new CLASE05.Clases.LabelText02();
             this.txt_n_TipoFactura_nuevo = new CLASE05.Clases.LabelText02();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.lbl_titulo = new System.Windows.Forms.Label();
-            this.txt_n_TipoFactura_viejo = new CLASE05.Clases.LabelText02();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +63,29 @@ namespace CLASE05.Formularios.TipoFactura
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(410, 288);
             this.panel1.TabIndex = 30;
+            // 
+            // txt_n_TipoFactura_viejo
+            // 
+            this.txt_n_TipoFactura_viejo._Ancho = 30;
+            this.txt_n_TipoFactura_viejo._Decimales = 2;
+            this.txt_n_TipoFactura_viejo._Etiqueta = "Nombre Factura Ant.";
+            this.txt_n_TipoFactura_viejo._Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
+            this.txt_n_TipoFactura_viejo._MensajeError = "El nombre de la factura está vácio";
+            this.txt_n_TipoFactura_viejo._Nombre_campo = "n_factura";
+            this.txt_n_TipoFactura_viejo._Nombre_tabla = null;
+            this.txt_n_TipoFactura_viejo._ReadOnly = false;
+            this.txt_n_TipoFactura_viejo._Text = "";
+            this.txt_n_TipoFactura_viejo._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txt_n_TipoFactura_viejo._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
+            this.txt_n_TipoFactura_viejo._Validable = true;
+            this.txt_n_TipoFactura_viejo.BackColor = System.Drawing.Color.Transparent;
+            this.txt_n_TipoFactura_viejo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_n_TipoFactura_viejo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txt_n_TipoFactura_viejo.Location = new System.Drawing.Point(-1, 34);
+            this.txt_n_TipoFactura_viejo.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_n_TipoFactura_viejo.Name = "txt_n_TipoFactura_viejo";
+            this.txt_n_TipoFactura_viejo.Size = new System.Drawing.Size(353, 53);
+            this.txt_n_TipoFactura_viejo.TabIndex = 23;
             // 
             // txt_n_TipoFactura_nuevo
             // 
@@ -98,6 +121,7 @@ namespace CLASE05.Formularios.TipoFactura
             this.btn_aceptar.TabIndex = 22;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = false;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // lbl_titulo
             // 
@@ -110,29 +134,6 @@ namespace CLASE05.Formularios.TipoFactura
             this.lbl_titulo.TabIndex = 29;
             this.lbl_titulo.Text = "Actualizar Tipos de Facturas";
             // 
-            // txt_n_TipoFactura_viejo
-            // 
-            this.txt_n_TipoFactura_viejo._Ancho = 30;
-            this.txt_n_TipoFactura_viejo._Decimales = 2;
-            this.txt_n_TipoFactura_viejo._Etiqueta = "Nombre Factura Ant.";
-            this.txt_n_TipoFactura_viejo._Mask = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
-            this.txt_n_TipoFactura_viejo._MensajeError = "El nombre de la factura está vácio";
-            this.txt_n_TipoFactura_viejo._Nombre_campo = "n_factura";
-            this.txt_n_TipoFactura_viejo._Nombre_tabla = null;
-            this.txt_n_TipoFactura_viejo._ReadOnly = false;
-            this.txt_n_TipoFactura_viejo._Text = "";
-            this.txt_n_TipoFactura_viejo._TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txt_n_TipoFactura_viejo._TipoDato = CLASE05.Clases.LabelText02.TipoDato.texto;
-            this.txt_n_TipoFactura_viejo._Validable = true;
-            this.txt_n_TipoFactura_viejo.BackColor = System.Drawing.Color.Transparent;
-            this.txt_n_TipoFactura_viejo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_n_TipoFactura_viejo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txt_n_TipoFactura_viejo.Location = new System.Drawing.Point(-1, 34);
-            this.txt_n_TipoFactura_viejo.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_n_TipoFactura_viejo.Name = "txt_n_TipoFactura_viejo";
-            this.txt_n_TipoFactura_viejo.Size = new System.Drawing.Size(353, 53);
-            this.txt_n_TipoFactura_viejo.TabIndex = 23;
-            // 
             // Frm_Modificacion_TipoFactura
             // 
             this._PosiciónVisible = true;
@@ -144,6 +145,7 @@ namespace CLASE05.Formularios.TipoFactura
             this.Controls.Add(this.lbl_titulo);
             this.Name = "Frm_Modificacion_TipoFactura";
             this.Text = "Frm_Modificacion_TipoFactura";
+            this.Load += new System.EventHandler(this.Frm_Modificacion_TipoFactura_Load);
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);
             this.Controls.SetChildIndex(this.btn_minimizar, 0);

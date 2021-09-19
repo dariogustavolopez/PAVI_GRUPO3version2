@@ -76,15 +76,29 @@ namespace CLASE05.Formularios.TipoFactura
             }
             
             Frm_Modificacion_TipoFactura frm_modificacion = new Frm_Modificacion_TipoFactura();
-            //frm_modificacion. = grid_TipoFactura.CurrentRow.Cells[0].Value.ToString();
+            frm_modificacion.id_tipo_factura = grid_TipoFactura.CurrentRow.Cells[0].Value.ToString();
             frm_modificacion.ShowDialog();
         }
 
         ///BAJA
         private void btn_borrar_Click(object sender, EventArgs e)
         {
+            if(grid_TipoFactura.Rows.Count == 0)
+            {
+                MessageBox.Show("Falta buscar Tipo de Factura", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+            if (grid_TipoFactura.CurrentCell.RowIndex == -1)
+            {
+                MessageBox.Show("Falta seleccionar un Tipo de Factura", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+
             Frm_Baja_TipoFactura frm_baja = new Frm_Baja_TipoFactura();
+            frm_baja.id_tipo_factura = grid_TipoFactura.CurrentRow.Cells[0].Value.ToString();
             frm_baja.ShowDialog();
+            grid_TipoFactura.Rows.Clear();
+
         }
 
         ///CONSULTA
@@ -92,16 +106,16 @@ namespace CLASE05.Formularios.TipoFactura
         {
             if (grid_TipoFactura.Rows.Count == 0)
             {
-                MessageBox.Show("Falta buscar usuarios", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show("Falta buscar Tipo de Factura", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
             if (grid_TipoFactura.CurrentCell.RowIndex == -1)
             {
-                MessageBox.Show("Falta seleccionar un usuario", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show("Falta seleccionar un Tipo de Factura", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
             Frm_Consulta_TipoFactura frm_consulta = new Frm_Consulta_TipoFactura();
-            //frm_consulta.id_tipo_factura = grid_TipoFactura.CurrentRow.Cells[0].Value.ToString();
+            frm_consulta.id_tipo_factura = grid_TipoFactura.CurrentRow.Cells[0].Value.ToString();
             frm_consulta.ShowDialog();
         }
 

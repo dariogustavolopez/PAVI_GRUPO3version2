@@ -30,7 +30,7 @@ namespace CLASE05.Formularios.Rubros
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grid_Rubros = new CLASE05.Clases.Grid01();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_blan_patron = new System.Windows.Forms.Button();
@@ -68,6 +68,7 @@ namespace CLASE05.Formularios.Rubros
             // btn_buscar
             // 
             this.toolTip1.SetToolTip(this.btn_buscar, "Realizar Busqueda");
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // btn_alta
             // 
@@ -128,8 +129,8 @@ namespace CLASE05.Formularios.Rubros
             this.grid_Rubros._tamannoLetraHeader = 9;
             this.grid_Rubros.AllowUserToAddRows = false;
             this.grid_Rubros.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grid_Rubros.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grid_Rubros.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.grid_Rubros.BackgroundColor = System.Drawing.Color.Silver;
             this.grid_Rubros.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             this.grid_Rubros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -190,6 +191,7 @@ namespace CLASE05.Formularios.Rubros
             this.txt_patron.Name = "txt_patron";
             this.txt_patron.Size = new System.Drawing.Size(129, 25);
             this.txt_patron.TabIndex = 29;
+            this.txt_patron.Click += new System.EventHandler(this.txt_patron_Click);
             // 
             // label3
             // 
@@ -212,30 +214,33 @@ namespace CLASE05.Formularios.Rubros
             this.txt_id_Rubro.Name = "txt_id_Rubro";
             this.txt_id_Rubro.Size = new System.Drawing.Size(48, 25);
             this.txt_id_Rubro.TabIndex = 35;
+            this.txt_id_Rubro.Click += new System.EventHandler(this.txt_id_Rubro_Click);
             // 
             // rb_id_Rubro
             // 
             this.rb_id_Rubro.AutoSize = true;
             this.rb_id_Rubro.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_id_Rubro.Location = new System.Drawing.Point(356, 31);
+            this.rb_id_Rubro.Location = new System.Drawing.Point(356, 61);
             this.rb_id_Rubro.Name = "rb_id_Rubro";
             this.rb_id_Rubro.Size = new System.Drawing.Size(81, 21);
             this.rb_id_Rubro.TabIndex = 34;
             this.rb_id_Rubro.TabStop = true;
             this.rb_id_Rubro.Text = "ID Rubro";
             this.rb_id_Rubro.UseVisualStyleBackColor = true;
+            this.rb_id_Rubro.CheckedChanged += new System.EventHandler(this.rb_id_Rubro_CheckedChanged);
             // 
             // rb_n_Rubro
             // 
             this.rb_n_Rubro.AutoSize = true;
             this.rb_n_Rubro.Font = new System.Drawing.Font("Microsoft JhengHei", 9.75F, System.Drawing.FontStyle.Bold);
-            this.rb_n_Rubro.Location = new System.Drawing.Point(356, 56);
+            this.rb_n_Rubro.Location = new System.Drawing.Point(356, 31);
             this.rb_n_Rubro.Name = "rb_n_Rubro";
             this.rb_n_Rubro.Size = new System.Drawing.Size(118, 21);
             this.rb_n_Rubro.TabIndex = 33;
             this.rb_n_Rubro.TabStop = true;
             this.rb_n_Rubro.Text = "Nombre Rubro";
             this.rb_n_Rubro.UseVisualStyleBackColor = true;
+            this.rb_n_Rubro.CheckedChanged += new System.EventHandler(this.rb_n_Rubro_CheckedChanged);
             // 
             // Frm_ABM_Rubros
             // 

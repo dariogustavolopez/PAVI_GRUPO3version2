@@ -16,6 +16,7 @@ namespace CLASE05.Formularios.Usuarios
             set { lbl_titulo.Text = value; }
         }
         public string id_usuario { get; set; }
+
         public Frm_Usuario()
         {
             InitializeComponent();

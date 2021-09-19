@@ -121,6 +121,7 @@ namespace CLASE05.Formularios.Rubros
             this.btn_aceptar.TabIndex = 22;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = false;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // lbl_titulo
             // 
@@ -143,6 +144,7 @@ namespace CLASE05.Formularios.Rubros
             this.Controls.Add(this.lbl_titulo);
             this.Name = "Frm_Modificacion_Rubro";
             this.Text = "Frm_Modificacion_Rubro";
+            this.Load += new System.EventHandler(this.Frm_Modificacion_Rubro_Load);
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);
             this.Controls.SetChildIndex(this.btn_minimizar, 0);

@@ -9,18 +9,18 @@ using System.Windows.Forms;
 
 namespace CLASE05.Negocios
 {
-    class NE_TipoFactura
+    class NE_Rubros
     {
         public enum Validacion { correcta, incorrecta }
 
-        public string id_tipo_factura { get; set; }
+        public string id_rubro { get; set; }
         public string nombre { get; set; }
-    
+
         BE_Acceso_Datos _BD = new BE_Acceso_Datos();
 
         public Validacion Validar(string nombre)
         {
-            string sql = @"SELECT * FROM tipo_factura
+            string sql = @"SELECT * FROM rubro
                          WHERE nombre = '" + nombre + "'";
 
             DataTable tabla = new DataTable();
@@ -38,7 +38,7 @@ namespace CLASE05.Negocios
 
         public int RecuperarId(string nombre)
         {
-            string sql = @"SELECT id_tipo_factura FROM tipo_factura
+            string sql = @"SELECT id_rubro FROM rubro
                          WHERE nombre = '" + nombre + "'";
 
             DataTable tabla = new DataTable();
@@ -50,24 +50,24 @@ namespace CLASE05.Negocios
                 return 0;
         }
 
-        public DataTable BuscarTipoFactura(string patron, string columna)
+        public DataTable BuscarRubro(string patron, string columna)
         {
-            string sql = @"SELECT id_tipo_factura, nombre
-                          FROM tipo_factura WHERE " + columna + " like '%" + patron + "%'";
+            string sql = @"SELECT id_rubro, nombre
+                          FROM rubro WHERE " + columna + " like '%" + patron + "%'";
 
             return _BD.EjecutarSelect(sql);
         }
-        public DataTable BuscarTipoFactura(string id_tipo_factura)
+        public DataTable BuscarRubro(string id_rubro)
         {
-            string sql = @"SELECT id_tipo_factura, nombre
-                          FROM tipo_factura WHERE id_tipo_factura = " + id_tipo_factura;
+            string sql = @"SELECT id_rubro, nombre
+                          FROM rubro WHERE id_rubro = " + id_rubro;
 
             return _BD.EjecutarSelect(sql);
         }
-        public DataTable RecuperarTipoFactura(string id_tipo_factura)
+        public DataTable RecuperarRubro(string id_rubro)
         {
             string sql = @"SELECT * 
-                          FROM tipo_factura WHERE id_tipo_factura = " + id_tipo_factura;
+                          FROM rubro WHERE id_rubro = " + id_rubro;
 
             return _BD.EjecutarSelect(sql);
         }
@@ -76,7 +76,7 @@ namespace CLASE05.Negocios
         {
             string sqlInsert = "";
 
-            sqlInsert = @"INSERT INTO tipo_factura (nombre) VALUES (";
+            sqlInsert = @"INSERT INTO rurbo (nombre) VALUES (";
             sqlInsert += "'" + nombre + "')";
 
             //MessageBox.Show(sqlInsert);
@@ -86,7 +86,7 @@ namespace CLASE05.Negocios
         {
             string sqlUpdate = "";
 
-            sqlUpdate = "UPDATE tipo_factura SET ";
+            sqlUpdate = "UPDATE rubro SET ";
             sqlUpdate += "nombre = '" + nombre + "'";
 
             _BD.Modificar(sqlUpdate);
@@ -94,7 +94,7 @@ namespace CLASE05.Negocios
 
         public void Borrar()
         {
-            string sqlDelete = "DELETE FROM tipo_factura WHERE id_tipo_factura = " + id_tipo_factura;
+            string sqlDelete = "DELETE FROM rubro WHERE id_rubro = " + id_rubro;
 
             _BD.Borrar(sqlDelete);
         }

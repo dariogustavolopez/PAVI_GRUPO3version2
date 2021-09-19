@@ -122,6 +122,7 @@ namespace CLASE05.Formularios.TipoFactura
             this.btn_aceptar.TabIndex = 22;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = false;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // lbl_titulo
             // 
@@ -145,6 +146,7 @@ namespace CLASE05.Formularios.TipoFactura
             this.Controls.Add(this.lbl_titulo);
             this.Name = "Frm_Consulta_TipoFactura";
             this.Text = "Frm_Consulta_TipoFactura";
+            this.Load += new System.EventHandler(this.Frm_Consulta_TipoFactura_Load);
             this.Controls.SetChildIndex(this.btn_cerrar, 0);
             this.Controls.SetChildIndex(this.btn_maximizar, 0);
             this.Controls.SetChildIndex(this.btn_minimizar, 0);

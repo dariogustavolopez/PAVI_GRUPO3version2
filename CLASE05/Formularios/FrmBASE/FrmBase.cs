@@ -31,6 +31,12 @@ namespace CLASE05.Formularios.FrmBASE
         {
             set { btn_maximizar.Visible = value; }
         }
+
+        //aca van los get set
+        public string id_usuario { get; set; }
+        public string id_tipo_factura { get; set; }
+        public string id_rubro{ get; set; }
+
         public FrmBase()
         {
             InitializeComponent();
